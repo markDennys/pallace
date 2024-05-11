@@ -55,6 +55,7 @@
 
 .header .nav {
     clear: both;
+    background-color: rgb(6, 188, 247);
     max-height: 0;
     transition: max-height .2s ease-out;
 }
@@ -542,12 +543,22 @@ button {
 }
 
 @media (max-width:700px) {
+    .header .nav {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        clear: both;
+        background-color: rgb(6, 188, 247);
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
     .avec {
         flex-direction: column;
     }
 
     .phone {
-        width: 80%;
+        width: 60%;
         margin-top: -100px;
     }
 
@@ -580,12 +591,32 @@ button {
 
     }
 
+    .colfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .mt3{
+        margin-top:-40px;
+    }
+
     .aboutt h3 {
         text-align: center;
     }
 
     .about img {
         width: 100%;
+    }
+
+    .aa{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .s{
+        text-align: right !important;
     }
 
     .history {
@@ -712,6 +743,7 @@ button {
         background-position: top;
         background-size: cover;
     }
+
     .me h2 {
 
         font-weight: 500;
@@ -721,14 +753,17 @@ button {
         transition: 0.5s;
         letter-spacing: 3px;
     }
-    
+
     .me:hover>h2 {
         opacity: 1;
         margin-top: -70px;
     }
-    
-    
 
+
+    .letreiro h1 {
+        font-size: 36px;
+        text-align: center;
+    }
 
 }
 
@@ -1004,4 +1039,14 @@ button {
         border-right: 0;
     }
 
+}
+
+.about {
+    position: relative;
+}
+
+.about .svgsw {
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
