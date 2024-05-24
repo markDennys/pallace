@@ -409,6 +409,10 @@ svg {
     cursor: pointer;
 }
 
+.showMU {
+    display: none;
+}
+
 .phoneimg {
     width: 45%;
     height: 100%;
@@ -424,7 +428,8 @@ svg {
     position: relative;
     width: 80%;
     max-width: 300px;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    margin-left: 5%;
     filter: drop-shadow(10px 0px 10px rgb(0, 56, 75));
 
 }
@@ -487,7 +492,6 @@ svg {
     position: relative;
     z-index: 100;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -542,8 +546,9 @@ svg {
     padding: 10px;
 
 }
-.feedbacksMobile{
-    display: none;
+
+.feedbacksMobile {
+    display: none !important;
 }
 
 .vittor {
@@ -1229,141 +1234,6 @@ button {
     background-color: rgba(218, 165, 32);
 }
 
-
-.feedback {
-    width: 100%;
-    height: 70vh;
-    max-height: 500px;
-    background-color: white;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1300px;
-}
-
-.tit-feed {
-    margin-top: 20px;
-    font-family: Montserrat;
-    margin-left: 30px;
-    text-align: center;
-    font-size: 50px;
-}
-
-.sty {}
-
-
-
-.head-feed {
-    height: 10%;
-
-}
-
-.feedbacks {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
-}
-
-.feedcontainer {
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-
-    width: 100%;
-}
-
-.card-feedback {
-    width: 90%;
-    position: absolute;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.show {
-    opacity: 1;
-    animation: sass infinite 10s;
-}
-
-.showt {
-    opacity: 0;
-    animation: showss infinite 10s;
-}
-
-.showd {
-    opacity: 1;
-    animation: sass infinite 7s;
-}
-
-.showb {
-    opacity: 0;
-    animation: showss infinite 7s;
-}
-
-
-.showda {
-    opacity: 1;
-    animation: sass infinite 14s;
-}
-
-.showdad {
-    opacity: 0;
-    animation: showss infinite 14s;
-}
-
-@keyframes showss {
-    0% {
-        opacity: 0;
-    }
-
-    49% {
-        opacity: 0;
-    }
-
-    59% {
-        opacity: 1;
-    }
-
-    99% {
-        opacity: 1;
-
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes sass {
-    0% {
-        opacity: 1;
-    }
-
-    49% {
-        opacity: 1;
-    }
-
-    59% {
-        opacity: 0;
-    }
-
-    99% {
-        opacity: 0;
-
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .progress {
     width: 100%;
     height: 6px;
@@ -1668,7 +1538,7 @@ button {
 
     }
 
-    .tit-feed{
+    .tit-feed {
         font-size: 36px;
     }
 
@@ -1677,70 +1547,16 @@ button {
         display: none;
     }
 
-    .feedbacksMobile{
+    .feedbacksMobile {
+        display: flex !important;
+    }
+
+    .showMU {
         display: flex;
     }
 
-    .showMU{
-        animation: shows;
-    }
 
-    .showMUD{
 
-    }
-    .showMUT{
-
-    }
-    .showMUQ{
-
-    }
-
-    
-@keyframes showss {
-    0% {
-        opacity: 0;
-    }
-
-    49% {
-        opacity: 0;
-    }
-
-    59% {
-        opacity: 1;
-    }
-
-    99% {
-        opacity: 1;
-
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes sass {
-    0% {
-        opacity: 1;
-    }
-
-    49% {
-        opacity: 1;
-    }
-
-    59% {
-        opacity: 0;
-    }
-
-    99% {
-        opacity: 0;
-
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
     .history {
         height: 75vh;
