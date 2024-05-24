@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+.none {
+    display: none;
+}
+
 .header {
-    height: 13vh;
+    height: 12vh;
+    max-height: 80px;
     background-color: rgb(6, 188, 247);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -13,7 +18,8 @@
     width: 100%;
     z-index: 1;
     float: left;
-    padding: 10px;
+    padding-bottom: 10px;
+    display: flex;
     z-index: 999999999999999999999;
 }
 
@@ -34,16 +40,20 @@
     text-decoration: none;
     transition: .3s;
     border-bottom: 1px #f7f7f7 solid;
+    font-weight: 700;
+    text-transform: uppercase;
     color: white;
+}
 
+
+.clube {
+    background-color: rgb(218, 165, 32);
 }
 
 .header li a:hover,
 .header .btn-mobile:hover {
-
     background-color: #02a1ee;
     color: #fff;
-
 }
 
 .header .logo {
@@ -54,6 +64,9 @@
 
 
 .header .nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     clear: both;
     background-color: rgb(6, 188, 247);
     max-height: 0;
@@ -140,12 +153,13 @@
     float: left;
     width: 92%;
     align-items: center;
-    margin: 0 4%;
+    margin: 0 auto;
+    max-width: 1500px;
 
 }
 
 li a {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -159,7 +173,7 @@ li a {
 
     .header li a {
 
-        padding: 15px 30px;
+        padding: 15px 20px;
         margin-top: 10px;
         border-radius: 6px;
 
@@ -184,20 +198,68 @@ li a {
 
 }
 
+.welcome {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.titlex {
+
+    font-size: max(50px, 3.5em);
+    width: 80%;
+    font-family: Montserrat;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.fon36 {
+    font-size: max(24px, 0.6em);
+}
+
+.wid60 {
+    width: 60%;
+    margin-left: 5%
+}
+
+.jef {
+    display: none;
+    width: 50%;
+}
 
 .avec {
     background-color: rgb(6, 188, 247);
-    background: linear-gradient(180deg, rgb(6, 188, 247), rgba(6, 187, 247, 0.557)), url('https://lh3.googleusercontent.com/p/AF1QipOuFc4ku7cfsGsyocWNWf4Bu5p1qAgEcBXpQaeX=s680-w680-h510');
+    background: linear-gradient(-90deg, rgba(0, 49, 67, 0), rgb(0, 41, 53)), url('https://lh3.googleusercontent.com/p/AF1QipOuFc4ku7cfsGsyocWNWf4Bu5p1qAgEcBXpQaeX=s680-w680-h510');
     background-repeat: no-repeat;
     background-size: cover;
+
+    width: 100%;
+    height: 150vh;
+    max-height: 1200px;
+
+}
+
+
+
+.container-avec {
     width: 100%;
     height: 90vh;
-    margin-top: 10vh;
+
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
+
 
 svg {
     position: absolute;
@@ -205,21 +267,74 @@ svg {
     left: 0;
 }
 
+.btnavec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    z-index: 9999;
+    position: relative;
+    background-color: #7269fa;
+    box-shadow: 10px 10px 0px 0 #8c86e0;
+    position: relative;
+    transition: 0.4s;
+
+}
+
+.btnavec:hover {
+    box-shadow: 3px 3px 0px 0 #8c86e0;
+
+}
+
+.box-sha {
+
+    background-color: rgb(218, 165, 32);
+    padding: 2px;
+    color: black;
+}
+
+.wid40 {
+    width: 40%;
+    margin-bottom: 10%;
+}
+
 
 
 
 .about {
-    background-color: rgb(6, 188, 247);
-    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.51), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed;
+    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed;
+    max-height: 600px;
+
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
+    width: 100%;
+
+}
+
+.about-content {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    height: 100vh;
     width: 100%;
-    background-color: rgb(218, 165, 32);
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+.filter {
+    filter: drop-shadow(30px 0px 00px rgb(6, 188, 247));
+}
+
+.title-about {
+    position: relative;
+    z-index: 9099999;
 }
 
 .aboutt {
@@ -229,68 +344,360 @@ svg {
     flex-direction: column;
     align-items: flex-end;
     width: 50%;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.history {
-    background-color: rgb(6, 188, 247);
-    background: linear-gradient(180deg, rgba(0, 188, 247, 1), rgba(6, 188, 247, 0.7)), url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1766,h=750,fit=crop/m6LrpJWxljuQv6p7/bd0a83d6-70b0-48a7-a879-f538e1413bf9-YrDXKJDWLrteQaKG.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.estil {
+    background-color: white;
+    color: #7269fa;
+    box-shadow: 10px 10px 0px #4639ff;
+
+}
+
+.phoneC {
+    width: 100%;
+    height: 50vh;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: #7269fa;
+    align-items: center;
+
+}
+
+.phone-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.phonetexts {
+    width: 55%;
+    height: 100%;
+    background-color: #7269fa;
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-    height: 100vh;
-    width: 100%;
+    align-items: flex-end;
+    font-family: Montserrat;
+    flex-direction: column;
 }
 
-.historyT {
+.agendeja {
+    color: white;
+    width: 60%;
+    text-align: right;
+    padding-right: 5%;
+
+}
+
+.apps {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+    padding-bottom: 3%;
+
+}
+
+.app {
+    width: 30%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.phoneimg {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #7269fa 35px, #7269fa 70px);
+}
+
+
+.phone-cel {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10%;
+    filter: drop-shadow(10px 0px 10px rgb(0, 56, 75));
+
+}
+
+
+.equipePa {
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    background-color: white;
+    position: relative;
+}
+
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    z-index: 90;
+    height: 100%;
+
+    background:
+        radial-gradient(farthest-side at -33.33% 50%, #0000 52%, #d6edff 54% 57%, #0000 59%) 0 calc(192px/2),
+        radial-gradient(farthest-side at 50% 133.33%, #0000 52%, #d6edff 54% 57%, #0000 59%) calc(192px/2) 0,
+        radial-gradient(farthest-side at 133.33% 50%, #0000 52%, #d6edff 54% 57%, #0000 59%),
+        radial-gradient(farthest-side at 50% -33.33%, #0000 52%, #d6edff 54% 57%, #0000 59%),
+        #ffffff;
+    background-size: calc(192px/4.667) 192px, 192px calc(192px/4.667);
+
+
+
+}
+
+.texttitleequipe {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.estilo {
+    color: white;
+    background-color: #01a2c8;
+    width: 100px;
+}
+
+.titleequipe {
+    margin-top: 2%;
+    font-size: 50px;
+    font-family: Montserrat;
+    letter-spacing: -5px;
+}
+
+.equipcontent {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+}
+
+.membroVi {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membrofato {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
+}
+
+.apresent {
+    font-family: Montserrat;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.especialist {
+    background-color: white;
+}
+
+.estinome {
+    background-color: #01a2c8;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 5px;
+
+    padding: 10px;
+
+}
+.feedbacksMobile{
+    display: none;
+}
+
+.vittor {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.and {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.dem {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.del {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./gid.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.beClube {
+    width: 100%;
+    height: 80vh;
+    max-height: 600px;
+    background: rgb(0, 26, 35);
+    position: relative;
+}
+
+
+.abuton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: rgb(218, 165, 32);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.beClubeContent {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+}
+
+
+
+.clubeTitle {
+    font-size: 60px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: -8px;
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    padding-left: 5%;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+.list {
+    margin-top: 10px;
+    font-size: 18px !important;
+}
+
+.fundoClu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    left: 0;
+    bottom: 0;
+    background:
+        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #002a2a 68% 70%, #0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #002a2a 68% 70%, #0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #002a2a 68% 70%, #0000 72%) 0 0/calc(2*32px) calc(2*32px),
+        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #002a2a 68% 70%, #0000 72%) 0 0/calc(2*32px) calc(2*32px),
+        repeating-conic-gradient(#001a23 0 25%, #0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+        radial-gradient(#0000 66%, #002a2a 68% 70%, #0000 72%) 0 calc(32px/2)/32px 32px #001a23;
+
+
+}
+
+.esticlube {
+    color: black;
+}
+
+.titleBe {
     width: 50%;
-}
-
-
-.historyT h3 {
-    padding-top: 30px;
-    text-align: right;
-    font-family: Montserrat;
+    font-size: 25px;
     color: white;
+    font-family: Montserrat;
     font-weight: 700;
-}
-
-.historyT h1 {
-    padding-top: 0px;
-    color: white;
-    /* color:rgb(6, 188, 247) ; */
-    font-family: Montserrat;
-    font-size: 58px;
-    -webkit-text-stroke-color: white;
+    text-align: center;
+    text-align: left;
+    padding-left: 5%;
+    position: relative;
+    z-index: 10;
 }
 
 .aboutt h3 {
-    padding-top: 30px;
+    margin-top: 20px;
     text-align: right;
     font-family: Montserrat;
+    text-align: left;
+    padding-left: 5%;
+
     font-weight: 500;
+
 }
 
 .aboutt h1 {
     padding-top: 0px;
 
-    font-family: 'saleha';
+    font-family: 'Seleha', Montserrat;
+    font-weight: 800;
 }
 
 .phone {
     position: relative;
-    z-index: 10000;
-    width: 27%;
-    max-width: 500px;
-    margin-left: 5%;
+    width: 33%;
+    max-width: 800px;
+
     animation: ups 1s;
 }
 
@@ -310,7 +717,13 @@ svg {
     flex-direction: column;
     align-items: flex-end;
     font-family: "Montserrat", sans-serif;
-    color: white;
+}
+
+.letters h1 {
+    margin-left: auto;
+    text-align: right;
+    width: 100%;
+    max-width: 700px;
 }
 
 h1 {
@@ -318,7 +731,14 @@ h1 {
 }
 
 .let {
-    font-size: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: white;
+}
+
+.tit {
+    font-size: 38px;
 }
 
 
@@ -448,64 +868,7 @@ button {
 
 
 
-.vittor {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-}
-
-.and {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.dem {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.del {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./del.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.vittor:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./vit.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.and:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./and.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.dem:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./dem.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.del:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./del.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .letreiro {
     font-family: "Montserrat", sans-serif;
@@ -519,6 +882,7 @@ button {
     font-weight: 400;
     letter-spacing: 3px;
 }
+
 
 
 .footer {
@@ -542,230 +906,6 @@ button {
     font-weight: 700;
 }
 
-@media (max-width:700px) {
-    .header .nav {
-        position: absolute;
-        top: 50px;
-        right: 20px;
-        clear: both;
-        background-color: rgb(6, 188, 247);
-        max-height: 0;
-        transition: max-height .2s ease-out;
-    }
-
-    .avec {
-        flex-direction: column;
-    }
-
-    .phone {
-        width: 60%;
-        margin-top: -100px;
-    }
-
-    .letters {
-        margin-top: -174px;
-        z-index: 9999999;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .letters h3 {
-        text-align: center;
-    }
-
-    .aboutt h1 {
-        font-size: 36px;
-    }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutt {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .colfooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .mt3{
-        margin-top:-40px;
-    }
-
-    .aboutt h3 {
-        text-align: center;
-    }
-
-    .about img {
-        width: 100%;
-    }
-
-    .aa{
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .s{
-        text-align: right !important;
-    }
-
-    .history {
-        height: 75vh;
-        flex-direction: column;
-    }
-
-    .historyT {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .history h1 {
-        font-size: 36px;
-    }
-
-    .historyT h3 {
-        text-align: center;
-    }
-
-    .history img {
-        width: 100%;
-    }
-
-    .servicos {
-        flex-direction: column;
-    }
-
-    .letreia {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .letreia h1 {
-        font-size: 36px;
-
-    }
-
-    .boxca {
-        width: 170px;
-    }
-
-    .grid {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .membros {
-        flex-direction: column;
-    }
-
-    .membros .me {
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-family: Montserrat;
-    }
-
-    .vittor {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-
-    }
-
-    .and {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .dem {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .del {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./del.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        cursor: pointer;
-    }
-
-    .vittor:hover {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./vit1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .and:hover {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./and1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .dem:hover {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./dem1.jpg');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-
-    .del:hover {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(6, 187, 247, 0)), url('./del.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .me h2 {
-
-        font-weight: 500;
-        font-size: 30px;
-        margin-top: -40px;
-        opacity: 0;
-        transition: 0.5s;
-        letter-spacing: 3px;
-    }
-
-    .me:hover>h2 {
-        opacity: 1;
-        margin-top: -70px;
-    }
-
-
-    .letreiro h1 {
-        font-size: 36px;
-        text-align: center;
-    }
-
-}
 
 .main_footer {
     position: relative;
@@ -1047,6 +1187,744 @@ button {
 
 .about .svgsw {
     position: absolute;
-    top: 0px;
+    top: 90px;
     width: 100%;
+}
+
+.btnler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02a1ee;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    height: 70px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.btnler::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -30px;
+    transition: 0.5s;
+
+    border: 4px solid black;
+}
+
+.btnler:hover::before {
+    top: 0px;
+    left: 0px;
+    width: 98%;
+    height: 90%;
+    border: 4px solid #02a1ee;
+
+}
+
+.yel {
+    background-color: rgba(218, 165, 32);
+}
+
+
+.feedback {
+    width: 100%;
+    height: 70vh;
+    max-height: 500px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.tit-feed {
+    margin-top: 20px;
+    font-family: Montserrat;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.sty {}
+
+
+
+.head-feed {
+    height: 10%;
+
+}
+
+.feedbacks {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.feedcontainer {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+    width: 100%;
+}
+
+.card-feedback {
+    width: 90%;
+    position: absolute;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.show {
+    opacity: 1;
+    animation: sass infinite 10s;
+}
+
+.showt {
+    opacity: 0;
+    animation: showss infinite 10s;
+}
+
+.showd {
+    opacity: 1;
+    animation: sass infinite 7s;
+}
+
+.showb {
+    opacity: 0;
+    animation: showss infinite 7s;
+}
+
+
+.showda {
+    opacity: 1;
+    animation: sass infinite 14s;
+}
+
+.showdad {
+    opacity: 0;
+    animation: showss infinite 14s;
+}
+
+@keyframes showss {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    59% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sass {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress {
+    width: 100%;
+    height: 6px;
+
+    background-color: rgba(218, 165, 32);
+}
+
+.feed {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Montserrat;
+    text-align: center;
+    position: relative;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star {
+    display: flex;
+}
+
+.star .hs {
+    color: rgba(218, 165, 32);
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-person {
+    width: 30%;
+    margin-right: 10px;
+}
+
+@media (max-width:700px) {
+    .header .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        position: absolute;
+        clear: both;
+        left: 0;
+        background-color: rgb(6, 188, 247);
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .avec {
+        height: 120vh;
+        background-position: center;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .phone {
+        width: 60%;
+        margin-top: -100px;
+    }
+
+
+
+
+    .letters {
+        margin-top: -174px;
+        z-index: 9999999;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .letters h3 {
+        text-align: center;
+    }
+
+    .aboutt h1 {
+        font-size: 30px;
+    }
+
+
+    .btnavec {
+        width: 80%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .aboutt {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .phoneC {
+        width: 100%;
+        height: 50vh;
+        max-height: 600px;
+        display: flex;
+        justify-content: center;
+        background-color: #7269fa;
+        align-items: center;
+
+    }
+
+    .phone-container {
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .phonetexts {
+        width: 55%;
+        height: 100%;
+        background-color: #7269fa;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        font-family: Montserrat;
+        flex-direction: column;
+    }
+
+    .agendeja {
+        color: white;
+        width: 100%;
+        font-size: 30px;
+        text-align: right;
+        padding-right: 10%;
+
+    }
+
+    .apps {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-bottom: 3%;
+
+    }
+
+    .app {
+        width: 100%;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .phoneimg {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #7269fa 35px, #7269fa 70px);
+    }
+
+
+
+    .phone-cel {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10%;
+        filter: drop-shadow(10px 0px 10px rgb(0, 56, 75));
+
+    }
+
+
+    .equipcontent {
+        flex-direction: column;
+    }
+
+    .titleequipe {
+        font-size: 30px;
+    }
+
+    .membroVi {
+        width: 100%;
+    }
+
+    .colfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .mt3 {
+        margin-top: -40px;
+    }
+
+    .aboutt h3 {
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .aa {
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+    .beClube {
+        width: 100%;
+        height: 80vh;
+        max-height: 600px;
+        background: rgb(0, 26, 35);
+        position: relative;
+    }
+
+
+    .abuton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        background-color: rgb(218, 165, 32);
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-family: Montserrat;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-top: 5%;
+        margin-left: 5%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .beClubeContent {
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        text-align: left;
+    }
+
+    .esticlube {
+        color: black;
+    }
+
+    .titleBe {
+        width: 90%;
+        font-size: 18px;
+        color: white;
+        font-family: Montserrat;
+        font-weight: 700;
+        text-align: center;
+        text-align: center;
+        padding-left: 5%;
+        position: relative;
+        z-index: 10;
+        margin-top: 10px;
+    }
+
+    .list {
+        font-size: 14px !important;
+    }
+
+    .clubeTitle {
+        font-size: 50px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: -8px;
+        color: white;
+        font-family: Montserrat;
+        text-align: left;
+        padding-left: 5%;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    .tit-feed{
+        font-size: 36px;
+    }
+
+
+    .feedbacks {
+        display: none;
+    }
+
+    .feedbacksMobile{
+        display: flex;
+    }
+
+    .showMU{
+        animation: shows;
+    }
+
+    .showMUD{
+
+    }
+    .showMUT{
+
+    }
+    .showMUQ{
+
+    }
+
+    
+@keyframes showss {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    59% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sass {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+    .history {
+        height: 75vh;
+        flex-direction: column;
+    }
+
+    .historyT {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .history h1 {
+        font-size: 36px;
+    }
+
+    .textshei {
+        font-size: 14px;
+    }
+
+    .historyT h3 {
+        text-align: center;
+    }
+
+    .history img {
+        width: 100%;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .letreia {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .letreia h1 {
+        font-size: 36px;
+
+    }
+
+    .boxca {
+        width: 170px;
+    }
+
+    .grid {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .membros {
+        flex-direction: column;
+    }
+
+    .membrofato {
+        width: 95%;
+        height: 100%;
+
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .vittor {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
+        background-repeat: no-repeat;
+        background-position:
+            calc(100% - 80%) calc(100% - 90%);
+
+
+        background-size: 150%;
+
+    }
+
+    .and {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
+        background-repeat: no-repeat;
+        background-position:
+            calc(100% - 80%) calc(100% - 80%);
+
+
+        background-size: 150%;
+    }
+
+    .dem {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
+        background-repeat: no-repeat;
+        background-position:
+            calc(100% - 80%) calc(100% - 70%);
+
+
+        background-size: 150%;
+    }
+
+    .del {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./gid.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position:
+            calc(100% - 80%) calc(100% - 80%);
+
+
+        background-size: 150%;
+    }
+
+
+    .me h2 {
+
+        font-weight: 500;
+        font-size: 30px;
+        margin-top: -40px;
+        opacity: 0;
+        transition: 0.5s;
+        letter-spacing: 3px;
+    }
+
+    .me:hover>h2 {
+        opacity: 1;
+        margin-top: -70px;
+    }
+
+
+    .letreiro h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .titlex {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    .fon36 {
+        font-size: 24px;
+    }
+
+    .wid60 {
+        width: 100%;
+    }
+
+    .wid40 {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .about .svgsw {
+        top: 0;
+    }
+
+    @media (max-height: 700px) {
+        .about img {
+            width: 80%;
+        }
+    }
+
+
+
+}
+
+
+
+carousel {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    float: left;
+    display: none;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    display: block;
 }
