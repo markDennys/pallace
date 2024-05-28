@@ -1072,10 +1072,10 @@ button {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 100px;
         left: 0px;
         position: absolute;
-        top: 50px;
+        top: 70px;
         right: 20px;
         clear: both;
         background-color: rgb(6, 188, 247);
@@ -1811,4 +1811,27 @@ carousel {
 
     font-weight: 500;
 
+}
+
+.ani {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+.anit {
+    opacity: 0;
+    transform: translateY(500%);
+    transition: all 1s;
+}
+
+
+
+.show {
+    opacity: 1;
+
+    transform: translateX(00);
+    transform: translateY(00);
+
+    filter: blur(0px);
 }
