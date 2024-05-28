@@ -237,7 +237,7 @@ li a {
 
 .avec {
     background-color: rgb(6, 188, 247);
-    background: linear-gradient(-90deg, rgba(0, 49, 67, 0), rgb(0, 41, 53)), url('https://lh3.googleusercontent.com/p/AF1QipOuFc4ku7cfsGsyocWNWf4Bu5p1qAgEcBXpQaeX=s680-w680-h510');
+    background: linear-gradient(-90deg, rgba(0, 49, 67, 0.32), rgb(0, 41, 53)), url('https://lh3.googleusercontent.com/p/AF1QipOuFc4ku7cfsGsyocWNWf4Bu5p1qAgEcBXpQaeX=s680-w680-h510');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -303,7 +303,7 @@ svg {
 
 
 .about {
-    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed;
+    background-color: rgb(218, 165, 32) !important;
     max-height: 600px;
 
     background-repeat: no-repeat;
@@ -358,8 +358,9 @@ svg {
 
 .phoneC {
     width: 100%;
-    height: 50vh;
-    max-height: 600px;
+    height: 40vh;
+    max-height:
+        450px;
     display: flex;
     justify-content: center;
     background-color: #7269fa;
@@ -370,6 +371,7 @@ svg {
 .phone-container {
     width: 100%;
     height: 100%;
+
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -391,7 +393,7 @@ svg {
     width: 60%;
     text-align: right;
     padding-right: 5%;
-
+    font-size: 44px;
 }
 
 .apps {
@@ -426,7 +428,7 @@ svg {
 
 .phone-cel {
     position: relative;
-    width: 80%;
+    width: 40%;
     max-width: 300px;
     margin-bottom: 15%;
     margin-left: 5%;
@@ -583,9 +585,9 @@ svg {
 
 .beClube {
     width: 100%;
-    height: 80vh;
-    max-height: 600px;
-    background: rgb(0, 26, 35);
+    height: 100vh;
+
+    background: #0A0A0C;
     position: relative;
 }
 
@@ -598,8 +600,8 @@ svg {
     max-width: 200px;
     height: 50px;
     background-color: rgb(218, 165, 32);
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: -2px;
     font-family: Montserrat;
     font-size: 20px;
     text-decoration: none;
@@ -650,22 +652,20 @@ svg {
     width: 100%;
     height: 100%;
     z-index: 8;
-    left: 0;
+    margin: 0 auto;
+    right: 0;
     bottom: 0;
-    background:
-        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #002a2a 68% 70%, #0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #002a2a 68% 70%, #0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
-        radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #002a2a 68% 70%, #0000 72%) 0 0/calc(2*32px) calc(2*32px),
-        radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #002a2a 68% 70%, #0000 72%) 0 0/calc(2*32px) calc(2*32px),
-        repeating-conic-gradient(#001a23 0 25%, #0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
-        radial-gradient(#0000 66%, #002a2a 68% 70%, #0000 72%) 0 calc(32px/2)/32px 32px #001a23;
 
-
+    background: url(vv-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 .esticlube {
     color: black;
 }
+
 
 .titleBe {
     width: 50%;
@@ -886,6 +886,13 @@ button {
 .equipe h1 {
     font-weight: 400;
     letter-spacing: 3px;
+}
+
+
+.estrutura{
+    width: 100%;
+    height: 100vh;
+    
 }
 
 
@@ -1326,7 +1333,7 @@ button {
         display: flex;
         flex-direction: column;
         height: 50vh;
-
+        max-height: 300px;
     }
 
     .about-content {
@@ -1350,7 +1357,7 @@ button {
     .phoneC {
         width: 100%;
         height: 50vh;
-        max-height: 600px;
+        max-height: 300px;
         display: flex;
         justify-content: center;
         background-color: #7269fa;
@@ -1379,15 +1386,20 @@ button {
 
     .agendeja {
         color: white;
-        width: 100%;
+        width: 80%;
         font-size: 30px;
         text-align: right;
         padding-right: 10%;
 
     }
 
+    .equipePa{
+        height: 390vh !important;
+        max-height: 900000px;
+    }
+
     .apps {
-        width: 60%;
+        width: 40%;
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
@@ -1416,6 +1428,7 @@ button {
 
     .phone-cel {
         position: relative;
+        width: 90% !important;
         width: 100%;
         margin-bottom: 10%;
         filter: drop-shadow(10px 0px 10px rgb(0, 56, 75));
@@ -1462,9 +1475,9 @@ button {
 
     .beClube {
         width: 100%;
-        height: 80vh;
-        max-height: 600px;
-        background: rgb(0, 26, 35);
+        height: 80vh !important;
+        max-height: 800000px;
+        max-width: 1300px;
         position: relative;
     }
 
@@ -1477,8 +1490,8 @@ button {
         max-width: 200px;
         height: 50px;
         background-color: rgb(218, 165, 32);
-        font-weight: 600;
-        letter-spacing: 2px;
+        font-weight: 700;
+        letter-spacing: -2px;
         font-family: Montserrat;
         font-size: 20px;
         text-decoration: none;
@@ -1489,16 +1502,29 @@ button {
         z-index: 10;
     }
 
+
+    .fundoClu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 8;
+        right: 0;
+        bottom: 0 !important;
+        background: url(vv-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
     .beClubeContent {
         width: 100%;
         height: 100%;
         max-width: 1300px;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        position: relative;
         text-align: left;
     }
 
@@ -1535,7 +1561,7 @@ button {
         padding-left: 5%;
         position: relative;
         z-index: 10;
-
+        padding-top: 20%;
     }
 
     .tit-feed {
@@ -1618,7 +1644,7 @@ button {
     }
 
     .membrofato {
-        width: 95%;
+        width: 100%;
         height: 100%;
 
         position: relative;
@@ -1743,4 +1769,42 @@ carousel {
 
 .active {
     display: block;
+}
+
+
+.test {
+
+    transform: translateX(50%);
+}
+
+.ani {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1.5s;
+}
+
+.anit {
+    opacity: 0;
+    transform: translatex(-50%);
+    transition: all 1.5s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translatex(50%);
+    transition: all 2s;
+}
+
+
+
+
+
+
+.show {
+    opacity: 1;
+
+    transform: translateX(00);
+    transform: translateY(00);
+
+    filter: blur(0px);
 }
