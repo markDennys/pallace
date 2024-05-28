@@ -289,6 +289,7 @@ svg {
 
 }
 
+
 .box-sha {
 
     background-color: rgb(218, 165, 32);
@@ -932,6 +933,262 @@ button {
     width: 90%;
 }
 
+
+.estrutura {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.mensagensNo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+}
+
+.destaque {
+    background-color: rgb(218, 165, 32);
+    color: black;
+}
+
+.menOi {
+    font-size: 20px;
+}
+
+.minor {
+    font-size: 30px;
+}
+
+.diadoN {
+    width: 100%;
+    height: 70vh;
+    max-height: 600px;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.asdl {
+    color: white;
+}
+
+
+.diadoNaa {
+    width: 100%;
+    height: 70vh;
+    max-height: 600px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.diadoN2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1300px;
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.imgNoivo {
+    width: 50%;
+    height: 100%;
+    background: url(ha.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.mestre {
+    font-size: 40px;
+
+}
+
+.forca {
+    width: 50%;
+    margin-top: 2%;
+    max-width: 300px;
+}
+
+.orc {
+    width: 100%;
+    height: 70vh;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 165, 32);
+    flex-direction: column;
+}
+
+.zapzap {
+    background-color: #25D366 !important;
+    box-shadow: 10px 10px 0 #047a30 !important;
+}
+
+.zapzap:hover {
+    box-shadow: 3px 3px 0px 0 #047a30 !important;
+
+}
+
+.mar {
+    margin-left: 3%;
+}
+
+
+.falc {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+
+
+.gallery {
+    max-width: 1300px;
+margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
+
+.imgNoivo2 {
+    width: 50%;
+    height: 100%;
+    background: url(groom-best-men-posing-beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.ulnoi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin-top: 10%;
+
+}
+
+
+
+.linoi {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.menneor {
+    margin-top: 5%;
+    font-size: 22px;
+    font-weight: 600;
+    width: 90%;
+}
+
+
 .footer {
     position: relative;
     height: 40vh;
@@ -1341,6 +1598,113 @@ button {
     }
 
 
+    .diadoNaa {
+        margin-top: 10%;
+        width: 100%;
+        height: 100vh !important;
+        max-height: 6000000px !important;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row-reverse;
+    }
+
+
+
+    .mensagensNo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        padding: 2%;
+    }
+
+
+    .diadoN {
+        width: 100%;
+        height: 70vh;
+        max-height: 600px;
+        display: flex;
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mestre {
+        font-size: 25px;
+    }
+
+    .diadoN2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        max-width: 1300px;
+
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .imgNoivo2 {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    .forca {
+        width: 100%;
+        margin-top: 2%;
+        max-width: 90000px;
+        margin: 0 auto;
+    }
+
+    .asdl {
+        text-align: center;
+        font-size: 46px;
+        margin-bottom: 2%;
+    }
+
+    .orc {
+        width: 100%;
+        height: 70vh;
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(218, 165, 32);
+        flex-direction: column;
+    }
+
+    .zapzap {
+        background-color: #25D366 !important;
+        box-shadow: 10px 10px 0 #047a30 !important;
+    }
+
+    .zapzap:hover {
+        box-shadow: 3px 3px 0px 0 #047a30 !important;
+
+    }
+
+    .mar {
+        margin-left: 3%;
+    }
+
 
 
     .letters {
@@ -1462,47 +1826,51 @@ button {
 
     .estrutura {
         width: 100%;
-        height: 200vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
     }
-    
+
     .mensagens {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        height: 50%;
+        height: 75%;
         background-color: rgb(6, 188, 247);
         padding-left: 2%;
         color: white;
     }
-    
+
     .destaque {
         background-color: rgb(218, 165, 32);
         color: black;
     }
-    
+
     .pallaceImg {
         width: 100%;
-        height: 50%;
-        background: url(papace.jpg) fixed;
+        height: 25%;
+        background: url(papace.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    
+
     }
-    
+
+    .men {
+        font-size: 40px;
+    }
+
     .menneor {
         margin-top: 5%;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 600;
         width: 90%;
     }
-    
+
     .phone-cel {
         position: relative;
         width: 90% !important;

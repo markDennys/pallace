@@ -11,7 +11,7 @@
 
 .header {
     height: 12vh;
-    max-height: 80px;
+    max-height: 90px;
     background-color: rgb(6, 188, 247);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -1229,7 +1229,7 @@ li a {
     }
 
     .faq{
-        margin-top: 5%;
+        margin-top: 20%;
     }
 
 
@@ -1465,4 +1465,38 @@ body {
     text-align: center;
     letter-spacing: -2px;
 
+}
+
+
+
+.ani {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1.5s;
+}
+
+.anit {
+    opacity: 0;
+    transform: translatex(-50%);
+    transition: all 1.5s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translatex(50%);
+    transition: all 2s;
+}
+
+
+
+
+
+
+.show {
+    opacity: 1;
+
+    transform: translateX(00);
+    transform: translateY(00);
+
+    filter: blur(0px);
 }
