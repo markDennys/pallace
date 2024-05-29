@@ -239,7 +239,7 @@ li a {
 
 .avec {
     background-color: rgb(6, 188, 247);
-    background: linear-gradient(-90deg, rgba(0, 49, 67, 0.32), rgb(0, 41, 53)), url('papapa.jpg');
+    background: linear-gradient(-90deg, rgba(0, 49, 67, 0), rgb(0, 41, 53)), url('https://lh3.googleusercontent.com/p/AF1QipOuFc4ku7cfsGsyocWNWf4Bu5p1qAgEcBXpQaeX=s680-w680-h510');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -290,6 +290,18 @@ svg {
 }
 
 
+.click-button {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-top: 3%;
+}
+
+.imgAvec {
+    width: 50px;
+}
+
+
 .box-sha {
 
     background-color: rgb(218, 165, 32);
@@ -316,10 +328,18 @@ svg {
 
 }
 
+.she {
+    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed !important;
+    max-height: 600px;
+
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 .about-content {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     max-width: 1300px;
@@ -343,13 +363,12 @@ svg {
 .aboutt {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
+    align-items: flex-start;
     max-width: 1300px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .estil {
@@ -359,11 +378,16 @@ svg {
 
 }
 
+.textshei {
+    width: 90%;
+    max-width: 450px;
+}
+
 .phoneC {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     max-height:
-        450px;
+        400px;
     display: flex;
     justify-content: center;
     background-color: #7269fa;
@@ -378,6 +402,8 @@ svg {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .phonetexts {
@@ -424,17 +450,18 @@ svg {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: white;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #7269fa 35px, #7269fa 70px);
+    background: url(Cartão\ de\ Visita\ Para\ Empresas\ de\ Frete\ e\ Entregas.png);
+    background-size: cover;
+    background-position: center;
 }
 
 
 .phone-cel {
     position: relative;
-    width: 40%;
-    max-width: 300px;
-    margin-bottom: 15%;
+    width: 50%;
     margin-left: 5%;
+    margin-bottom: 5%;
+    z-index: 90000;
     filter: drop-shadow(10px 0px 10px rgb(0, 56, 75));
 
 }
@@ -590,7 +617,7 @@ svg {
     width: 100%;
     height: 100vh;
 
-    background: #0A0A0C;
+    background: #e3cca4;
     position: relative;
 }
 
@@ -673,7 +700,7 @@ svg {
 .titleBe {
     width: 50%;
     font-size: 25px;
-    color: white;
+    color: black;
     font-family: Montserrat;
     font-weight: 700;
     text-align: center;
@@ -1587,7 +1614,7 @@ button {
     }
 
     .avec {
-        height: 120vh;
+        height: 60vh;
         background-position: center;
         flex-direction: column;
         margin-top: 90px;
@@ -1736,19 +1763,33 @@ button {
     }
 
     .aboutt h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
 
     .btnavec {
-        width: 80%;
+        width: 60%;
+        height: 50px;
+    }
+
+    .imgAvec {
+        width: 30px;
     }
 
     .about {
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 30vh;
         max-height: 300px;
+    }
+
+    .she {
+        background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed !important;
+        max-height: 600px;
+
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom;
     }
 
     .about-content {
@@ -1771,8 +1812,8 @@ button {
 
     .phoneC {
         width: 100%;
-        height: 50vh;
-        max-height: 300px;
+        height: 60vh;
+        max-height: 300000000px;
         display: flex;
         justify-content: center;
         background-color: #7269fa;
@@ -1786,57 +1827,178 @@ button {
         max-width: 1300px;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
+
+
     }
 
     .phonetexts {
-        width: 55%;
-        height: 100%;
+        width: 90%;
+        height: 40%;
         background-color: #7269fa;
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         font-family: Montserrat;
         flex-direction: column;
+        text-align: center;
     }
 
     .agendeja {
         color: white;
         width: 80%;
-        font-size: 30px;
-        text-align: right;
-        padding-right: 10%;
+        font-size: 24px;
+        text-align: center;
+        padding-right: 0% !important;
 
     }
 
     .equipePa {
-        height: 390vh !important;
+        height: 90vh !important;
         max-height: 900000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .equipePa .titleEquipe {
+        font-size: 30px;
+        width: 100%;
+        height: 10%;
+        padding-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .gridpa {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .btnGoEquipe {
+        position: absolute;
+        top: 45%;
+        background-color: rgb(218, 165, 32);
+        box-shadow: 7px 7px 0 rgb(218, 165, 32); 
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+        width: 70%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .griidEquipe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .equiV {
+        width: 50%;
+        height: 50%;
+        background: url(vit.jpg);
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('vit.jpg');
+        background-position: center;
+        background-size: cover;
+        background-position:
+            calc(100% - 80%) calc(100% - 90%);
+
+
+        background-size: 150%;
+    }
+
+    .equiA {
+        width: 50%;
+        height: 50%;
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('and.jpg');
+
+        background-position: center;
+        background-size: cover;
+        background-size: cover;
+        background-position:
+            calc(100% - 80%) calc(100% - 80%);
+
+
+        background-size: 150%;
+    }
+
+    .equiD {
+        width: 50%;
+        height: 50%;
+        background: url(dem.jpg);
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('dem.jpg');
+        background-position: center;
+        background-size: cover;
+        background-size: cover;
+        background-position:
+            calc(100% - 80%) calc(100% - 80%);
+
+
+        background-size: 150%;
+    }
+
+    .equiG {
+        width: 50%;
+        height: 50%;
+        background: url(gid.jpg);
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('gid.jpg');
+
+        background-position: center;
+        background-size: cover;
+        background-size: cover;
+        background-position:
+            calc(100% - 60%) calc(100% - 90%);
+
+
+        background-size: 150%;
+    }
+
+    .goEquipe {
+        width: 100%;
+        height: 10%;
+
     }
 
     .apps {
-        width: 40%;
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        padding-right: 10%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
         padding-bottom: 3%;
 
     }
 
     .app {
-        width: 100%;
+        background-color: #01a2c8;
+        width: 40%;
         margin: 10px;
         cursor: pointer;
     }
 
+    .ios{
+        background-color: #8c86e0;
+    }
+
     .phoneimg {
-        width: 45%;
-        height: 100%;
+        width: 100%;
+        height: 60%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         background-color: white;
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #7269fa 35px, #7269fa 70px);
+        background: url(Cartão\ de\ Visita\ Para\ Empresas\ de\ Frete\ e\ Entregas.png);
+        background-position: center;
+        background-size: cover;
     }
 
 
@@ -1984,7 +2146,7 @@ button {
         margin: 0 auto;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         text-align: left;
     }
@@ -1995,12 +2157,11 @@ button {
 
     .titleBe {
         width: 90%;
-        font-size: 18px;
-        color: white;
+        font-size: 16px;
+        color: black;
         font-family: Montserrat;
         font-weight: 700;
-        text-align: center;
-        text-align: center;
+        text-align: left;
         padding-left: 5%;
         position: relative;
         z-index: 10;
@@ -2012,11 +2173,11 @@ button {
     }
 
     .clubeTitle {
-        font-size: 50px;
+        font-size: 36px;
         text-align: left;
         text-transform: uppercase;
-        letter-spacing: -8px;
-        color: white;
+        letter-spacing: 1px;
+        color: black;
         font-family: Montserrat;
         text-align: left;
         padding-left: 5%;
@@ -2179,12 +2340,12 @@ button {
     }
 
     .titlex {
-        width: 100%;
-        font-size: 36px;
+        width: 80%;
+        font-size: 24px;
     }
 
     .fon36 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .wid60 {
