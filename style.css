@@ -620,7 +620,6 @@ svg {
 .beClube {
     width: 100%;
     height: 100vh;
-
     background: #e3cca4;
     position: relative;
 }
@@ -633,13 +632,13 @@ svg {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    background-color: rgb(218, 165, 32);
+    background-color: #06bcf7;
     font-weight: 700;
     letter-spacing: -2px;
     font-family: Montserrat;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     margin-top: 5%;
     margin-left: 5%;
     position: relative;
@@ -1619,7 +1618,7 @@ button {
     }
 
     .avec {
-        height: 80vh;
+        height: 70vh;
         background-position: center;
         flex-direction: column;
         margin-top: 90px;
@@ -1913,6 +1912,15 @@ button {
         background-color: #daa520;
     }
 
+    .padrao{
+        width: 100%;
+        height: 20vh;
+        background: url(padra.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .equipePa .titleRquipe {
         font-size: 26px;
         width: 95%;
@@ -2173,13 +2181,13 @@ button {
         width: 100%;
         max-width: 200px;
         height: 50px;
-        background-color: rgb(218, 165, 32);
-        font-weight: 700;
+        background-color: #06bcf7;
+        font-weight: 600;
         letter-spacing: -2px;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 18px;
         text-decoration: none;
-        color: black;
+        color: white;
         margin-top: 5%;
         margin-left: 5%;
         position: relative;
@@ -2202,7 +2210,7 @@ button {
 
     .beClubeContent {
         width: 100%;
-        height: 100%;
+        height: 40%;
         max-width: 1300px;
         margin: 0 auto;
         display: flex;
@@ -2221,7 +2229,7 @@ button {
         font-size: 14px;
         color: black;
         font-family: Montserrat;
-        font-weight: 700;
+        font-weight: 600;
         text-align: left;
         padding-left: 5%;
         position: relative;
@@ -2234,7 +2242,7 @@ button {
     }
 
     .clubeTitle {
-        font-size: 36px;
+        font-size: 26px;
         text-align: left;
         text-transform: uppercase;
         letter-spacing: 1px;
