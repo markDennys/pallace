@@ -278,7 +278,6 @@ svg {
     z-index: 9999;
     position: relative;
     background-color: #7269fa;
-    box-shadow: 10px 10px 0px 0 #8c86e0;
     position: relative;
     transition: 0.4s;
 
@@ -731,7 +730,7 @@ svg {
     padding-top: 0px;
 
     font-family: 'Seleha', Montserrat;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .phone {
@@ -1786,8 +1785,9 @@ button {
     .about {
         display: flex;
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
         max-height: 700px;
+        box-shadow: 0 0 10px #006d91;
     }
 
     .she {
@@ -1804,14 +1804,24 @@ button {
         text-align: center;
         justify-content: center;
         align-items: center;
-        height: 30%;
+        height: 50%;
 
+    }
+
+    .calltohistory{
+        margin-top: 20px;
+        width: 100%;
+        max-width: 200px;
+        color: black;
+        height: 70px;
+        font-size: 14px;
+        background-color: #02a1ee;
     }
 
     .funshe {
         position: relative;
         z-index: 99999;
-        height: 95%;
+        height: 50%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1819,12 +1829,22 @@ button {
     }
 
     .realfun {
-        width: 90%;
-        height: 90%;
+        width: 85%;
+        height: 85%;
         background: url('man.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        position: relative;
+    }
+    .realfun::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border: 3px solid #02a1ee;
     }
 
     .aboutt {
@@ -1839,7 +1859,7 @@ button {
 
     .phoneC {
         width: 100%;
-        height: 70vh;
+        height: 60vh;
         max-height: 300000000px;
         display: flex;
         justify-content: center;
@@ -2035,9 +2055,10 @@ button {
         justify-content: flex-start;
         align-items: center;
         background-color: white;
-        background: url(cartao\ \(2\).png);
+        background: url(catar\ \(2\).png);
         background-position: center;
         background-size: cover;
+
     }
 
 
