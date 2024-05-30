@@ -626,6 +626,9 @@ svg {
     background: linear-gradient(180deg, #e3cca4, #e3cca461), url('sand.jpg');
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -1925,7 +1928,7 @@ button {
         overflow: hidden;
     }
 
-  
+
     .betitlepallace {
         font-size: 46px;
     }
@@ -2192,10 +2195,12 @@ button {
 
     .beClube {
         width: 100%;
-        height: 100vh !important;
+        height: 180vh !important;
         max-height: 800000px;
         max-width: 1300px;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -2235,7 +2240,7 @@ button {
 
     .beClubeContent {
         width: 100%;
-        height: 40%;
+        height: 30vh;
         max-width: 1300px;
         margin: 0 auto;
         display: flex;
@@ -2245,9 +2250,71 @@ button {
         text-align: left;
     }
 
+    .cardsPallace {
+        width: 100%;
+        height: 35vh;
+        margin-top: 10vh;
+    }
+
+
+    .cardPalla {
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        border: 3px solid black;
+    }
+
+
+    .headcard {
+        position: relative;
+
+        width: 100%;
+        display: flex;
+        height: 50%;
+
+    }
+
+    .imageCard {
+        width: 50%;
+        position: absolute;
+        top: -30px;
+        left: -20px;
+    }
+
+    .rig {
+        width: 50%;
+        position: absolute;
+        top: -30px;
+        right: -20px;
+    }
+
+
+
+
     .esticlube {
         color: black;
     }
+
+    .textsCard {
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+
 
     .titleBe {
         width: 70%;
@@ -2265,12 +2332,15 @@ button {
     .list {
         font-size: 14px !important;
     }
+    .descript{
+        font-size: 14px;
+    }
 
     .clubeTitle {
-        font-size: 34px;
+        font-size: 40px;
         text-align: left;
         text-transform: uppercase;
-        letter-spacing: 0px;
+        letter-spacing: -1px;
         font-family: Montserrat;
         text-align: left;
         padding-left: 5%;
