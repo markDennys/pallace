@@ -329,11 +329,11 @@ svg {
 }
 
 .she {
-    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed !important;
+    background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.9), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') !important;
     max-height: 600px;
 
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: contain !important;
 }
 
 .about-content {
@@ -358,7 +358,13 @@ svg {
 .title-about {
     position: relative;
     z-index: 9099999;
+    color: white !important;
 }
+
+.lis {
+    border-bottom: 5px solid white;
+}
+
 
 .aboutt {
     height: 100%;
@@ -409,7 +415,7 @@ svg {
 .phonetexts {
     width: 55%;
     height: 100%;
-    background-color: #7269fa;
+    background-color: #06bcf7;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -421,7 +427,6 @@ svg {
     color: white;
     width: 60%;
     text-align: right;
-    padding-right: 5%;
     font-size: 44px;
 }
 
@@ -429,7 +434,7 @@ svg {
     width: 60%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 3%;
+    padding-right: 0%;
     padding-bottom: 3%;
 
 }
@@ -450,7 +455,7 @@ svg {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: url(Cartão\ de\ Visita\ Para\ Empresas\ de\ Frete\ e\ Entregas.png);
+    background: url(Cartão\ de\ Visita\ Para\ Empresas\ de\ Frete\ e\ Entrega.png);
     background-size: cover;
     background-position: center;
 }
@@ -1767,6 +1772,7 @@ button {
     }
 
 
+
     .btnavec {
         width: 60%;
         height: 50px;
@@ -1779,12 +1785,12 @@ button {
     .about {
         display: flex;
         flex-direction: column;
-        height: 30vh;
-        max-height: 300px;
+        height: 60vh;
+        max-height: 700px;
     }
 
     .she {
-        background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') fixed !important;
+        background: linear-gradient(360deg, rgb(218, 165, 1), rgba(218, 165, 32, 0.8), rgba(218, 165, 32, 1)), url('https://uploads.grupodicas.com/2023/07/Dubai-25.png') !important;
         max-height: 600px;
 
         background-repeat: no-repeat !important;
@@ -1797,26 +1803,46 @@ button {
         text-align: center;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 30%;
 
     }
 
-    .aboutt {
+    .funshe {
+        position: relative;
+        z-index: 99999;
+        height: 95%;
         width: 100%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .realfun {
+        width: 90%;
+        height: 90%;
+        background: url('man.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .aboutt {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
 
     .phoneC {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         max-height: 300000000px;
         display: flex;
         justify-content: center;
-        background-color: #7269fa;
+        background-color: #06bcf7;
         align-items: center;
 
     }
@@ -1833,43 +1859,49 @@ button {
     }
 
     .phonetexts {
-        width: 90%;
-        height: 40%;
-        background-color: #7269fa;
+        width: 100%;
+        height: 45%;
+        background-color: #06bcf7;
         display: flex;
         justify-content: space-around;
         align-items: center;
         font-family: Montserrat;
         flex-direction: column;
         text-align: center;
+
     }
 
     .agendeja {
         color: white;
-        width: 80%;
+        width: 95%;
         font-size: 24px;
-        text-align: center;
-        padding-right: 0% !important;
+        text-align: left;
+        padding-left: 5%;
+        padding-top: 5%;
 
     }
 
     .equipePa {
-        height: 90vh !important;
+        height: 110vh !important;
         max-height: 900000px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: column;
+        background-color: #daa520;
     }
 
-    .equipePa .titleEquipe {
-        font-size: 30px;
-        width: 100%;
+    .equipePa .titleRquipe {
+        font-size: 24px;
+        width: 95%;
         height: 10%;
-        padding-left: 10%;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        padding-left: 5%;
+        color: white;
+        font-weight: 600;
     }
 
     .gridpa {
@@ -1878,19 +1910,19 @@ button {
         align-content: center;
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 85%;
         flex-wrap: wrap;
     }
 
     .btnGoEquipe {
-        position: absolute;
-        top: 45%;
-        background-color: rgb(218, 165, 32);
-        box-shadow: 7px 7px 0 rgb(218, 165, 32); 
-        color: black;
+
+
+        background-color: rgb(6, 188, 247);
+        color: white;
         font-weight: 700;
         font-size: 18px;
-        width: 70%;
+        width: 100%;
+        max-width: 300px;
         height: 50px;
         display: flex;
         justify-content: center;
@@ -1899,14 +1931,18 @@ button {
 
     .griidEquipe {
         width: 100%;
-        height: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     .equiV {
-        width: 50%;
+        width: 45%;
         height: 50%;
         background: url(vit.jpg);
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('vit.jpg');
+        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('vit.jpg');
         background-position: center;
         background-size: cover;
         background-position:
@@ -1917,9 +1953,10 @@ button {
     }
 
     .equiA {
-        width: 50%;
+        
+        width: 45%;
         height: 50%;
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('and.jpg');
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('and.jpg');
 
         background-position: center;
         background-size: cover;
@@ -1932,10 +1969,10 @@ button {
     }
 
     .equiD {
-        width: 50%;
+        width: 45%;
         height: 50%;
         background: url(dem.jpg);
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('dem.jpg');
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('dem.jpg');
         background-position: center;
         background-size: cover;
         background-size: cover;
@@ -1947,10 +1984,10 @@ button {
     }
 
     .equiG {
-        width: 50%;
+        width: 45%;
         height: 50%;
         background: url(gid.jpg);
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0.4), rgba(0, 71, 95, 0.4)), url('gid.jpg');
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('gid.jpg');
 
         background-position: center;
         background-size: cover;
@@ -1985,8 +2022,9 @@ button {
         cursor: pointer;
     }
 
-    .ios{
-        background-color: #8c86e0;
+    .ios {
+        background-color: white;
+        color: black;
     }
 
     .phoneimg {
@@ -1996,7 +2034,7 @@ button {
         justify-content: flex-start;
         align-items: center;
         background-color: white;
-        background: url(Cartão\ de\ Visita\ Para\ Empresas\ de\ Frete\ e\ Entregas.png);
+        background: url(carta.png);
         background-position: center;
         background-size: cover;
     }
@@ -2223,6 +2261,10 @@ button {
 
     .textshei {
         font-size: 14px;
+        text-align: left !important;
+        padding: 0 !important;
+        color: white;
+        font-weight: 600;
     }
 
     .historyT h3 {
