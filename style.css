@@ -698,13 +698,14 @@ svg {
 }
 
 .esticlube {
+    background-color: rgb(6, 188, 247) !important;
     color: black;
 }
 
 
 .titleBe {
     width: 50%;
-    font-size: 25px;
+    font-size: 14px;
     color: black;
     font-family: Montserrat;
     font-weight: 700;
@@ -1619,7 +1620,7 @@ button {
     }
 
     .avec {
-        height: 60vh;
+        height: 80vh;
         background-position: center;
         flex-direction: column;
         margin-top: 90px;
@@ -1768,7 +1769,7 @@ button {
     }
 
     .aboutt h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
 
@@ -1874,7 +1875,7 @@ button {
     .agendeja {
         color: white;
         width: 95%;
-        font-size: 24px;
+        font-size: 26px;
         text-align: left;
         padding-left: 5%;
         padding-top: 5%;
@@ -1892,7 +1893,7 @@ button {
     }
 
     .equipePa .titleRquipe {
-        font-size: 24px;
+        font-size: 26px;
         width: 95%;
         height: 10%;
         display: flex;
@@ -1953,7 +1954,7 @@ button {
     }
 
     .equiA {
-        
+
         width: 45%;
         height: 50%;
         background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('and.jpg');
@@ -2034,7 +2035,7 @@ button {
         justify-content: flex-start;
         align-items: center;
         background-color: white;
-        background: url(carta.png);
+        background: url(cartao\ \(2\).png);
         background-position: center;
         background-size: cover;
     }
@@ -2195,7 +2196,7 @@ button {
 
     .titleBe {
         width: 90%;
-        font-size: 16px;
+        font-size: 14px;
         color: black;
         font-family: Montserrat;
         font-weight: 700;
@@ -2215,13 +2216,13 @@ button {
         text-align: left;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: black;
         font-family: Montserrat;
         text-align: left;
         padding-left: 5%;
         position: relative;
         z-index: 10;
         padding-top: 20%;
+        color: black;
     }
 
     .tit-feed {
