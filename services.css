@@ -1207,7 +1207,7 @@ button {
         font-weight: 700 !important;
     }
 
-    .nomar{
+    .nomar {
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -1596,7 +1596,7 @@ carousel {
     display: none !important;
 }
 
-.nomar{
+.nomar {
     padding-bottom: 3% !important;
     padding-top: 3% !important;
 }
@@ -1833,4 +1833,119 @@ carousel {
     transform: translateY(00);
 
     filter: blur(0px);
+}
+
+.ourHistory {
+    width: 100%;
+    height: 170vh;
+    margin-top: 12vh;
+    background-color: white;
+}
+
+.titlepage {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.historyTitle {
+    display: block;
+    font-size: 34px;
+}
+
+.paraghistory {
+    width: 90%;
+    height: 45%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+}
+
+.parahist {
+    padding-top: 5%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.stronghi {
+    font-weight: 700;
+}
+
+.followus {
+    height: auto;
+    width: 100%;
+    background-color: rgb(6, 188, 247);
+    margin-top: 20%;
+    padding-bottom: 10%;
+
+}
+
+.headfollow {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.titlefollou {
+    font-size: 30px;
+
+    color: white;
+}
+
+.instafoll {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+}
+
+.grid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridinstafoto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gridinsta {
+    width: 30%;
+    height: 200px;
+    background-color: #fff;
+    margin: 3px;
+}
+
+.gridinstaf {
+    width: 30%;
+    height: 100px;
+    margin: 3px;
+
+}
+
+.estruturaPa {
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(218, 165, 32);
+    ;
+}
+
+.vid {
+    width: 100%;
+}
+
+.fot {
+    width: 100%;
+    height: 100%
 }

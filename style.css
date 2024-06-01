@@ -1780,9 +1780,10 @@ button {
     }
 
     .btnGoEquipe {
-
-
-        background-color: rgb(6, 188, 247);
+        position: absolute;
+        top: 45%;
+        background-color: rgb(218, 165, 1);
+        box-shadow: 0 0 10px black;
         color: white;
         font-weight: 700;
         font-size: 18px;
@@ -2557,10 +2558,8 @@ carousel {
     font-size: 1.5rem;
 }
 
-.footer__addr h2 {
-    margin-top: 1.3em;
-    font-size: 15px;
-    font-weight: 400;
+.footer__addr .logo {
+    width: 50%;
 }
 
 .nav__title {
@@ -2571,8 +2570,9 @@ carousel {
 .footer address {
     font-style: normal;
     color: white;
-    font-size: 10PX;
+    font-size: 12PX;
     width: 60%;
+    margin-top: 5%;
 }
 
 .footer__btn {
@@ -2596,9 +2596,7 @@ carousel {
     padding-left: 0;
 }
 
-.footer li {
-    line-height: 2em;
-}
+.footer li {}
 
 .footer a {
     text-decoration: none;
@@ -2616,6 +2614,10 @@ carousel {
 
 .nav__ul a {
     color: white;
+}
+
+.afoo {
+    font-size: 12px;
 }
 
 .nav__ul--extra {
@@ -2660,4 +2662,44 @@ carousel {
     .footer__nav {
         flex: 2 0px;
     }
+}
+
+.pones {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactpone {
+    font-size: 12px;
+}
+
+.pone1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footerReserved {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0096c8;
+    text-align: center;
+}
+
+.fonmin {
+    color: white;
+    font-size: 12px;
+}
+
+.fontClick {
+    color: white;
+    font-size: 12px;
+    padding-top: 5%;
 }
