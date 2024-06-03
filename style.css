@@ -2749,3 +2749,17 @@ carousel {
     opacity: 0.3;
     z-index: 1;
 }
+
+.abae{
+    background-color: white !important;
+    height: 300vh !important;
+}
+
+.contaba{
+    width: 80%;
+
+}
+
+.memo{
+    margin-top: 10px;
+}
