@@ -301,7 +301,7 @@
 .card {
     width: 50%;
     height: 100%;
-    background: white;
+    background: #06bcf7;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -345,16 +345,17 @@
     font-size: 24px;
     width: 70%;
     text-align: center;
-    color: black;
+    color: white !important;
     margin-top: -50px;
 }
 
 .preto .cl {
-    color: black;
+    color: white !important;
 }
 
 .values {
     width: 100%;
+    color: white !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1147,10 +1148,9 @@ li a {
 
     .gridparceiros {
         width: 100%;
-
+        margin-top: 10%;
         display: flex;
         flex-direction: column;
-        padding-bottom: 5%;
         height: 170vh !important;
         max-height: 9000000px !important;
     }
@@ -1204,7 +1204,7 @@ li a {
 
 
     .beneficio {
-        color: black;
+        color: white;
         font-weight: 400;
         padding: 5px 10px;
 
@@ -1218,9 +1218,7 @@ li a {
         width: 30% !important;
     }
 
-    .faq {
-        margin-top: 20%;
-    }
+    .faq {}
 
 
 
@@ -1255,7 +1253,9 @@ carousel {
     flex-direction: column;
     width: 100%;
     height: auto;
+    background-color: #e3cca4;
     padding-bottom: 5%;
+    padding-top: 10%;
 }
 
 .faqcon {
@@ -1298,7 +1298,7 @@ carousel {
 }
 
 body {
-    background-color: #e3cca4;
+    background-color: white;
 }
 
 .gridparceiros {
@@ -1346,12 +1346,14 @@ body {
     align-items: center;
     width: 100%;
 }
-.azuls{
+
+.azuls {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .sty {
     width: 80%;
     height: 3px;
@@ -1646,19 +1648,45 @@ input[type=radio] {
     width: 100%;
     max-width: 900px;
     max-height: 900px;
-    height: 100vh;
+    height: 110vh;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonpaln {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.prev {
+    left: 5px;
+    color: black;
+}
+
+.ant {
+    color: black;
+    right: 5px;
 }
 
 .cards {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15%;
 }
 
 .imgg {
