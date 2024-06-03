@@ -283,7 +283,6 @@
     width: 100%;
     height: 200vh;
     max-height: 1200px;
-    background-color: rgb(0, 26, 35);
     max-width: 1500px;
     margin: 0 auto;
 
@@ -311,7 +310,7 @@
 
 .head {
     width: 100%;
-    height: 20%;
+    height: 15%;
     height: auto;
     display: flex;
     justify-items: center;
@@ -326,7 +325,6 @@
 }
 
 .beneficio {
-    border-top: 1px solid black;
     height: 10%;
     font-size: 14px;
     color: black;
@@ -1203,7 +1201,6 @@ li a {
 
 
     .beneficio {
-        border-top: 1px solid black;
         color: black;
         font-weight: 400;
         padding: 5px 10px;
@@ -1256,7 +1253,6 @@ carousel {
     width: 100%;
     height: auto;
     padding-bottom: 5%;
-    background-color: rgb(0, 26, 35);
 }
 
 .faqcon {
@@ -1265,7 +1261,7 @@ carousel {
 }
 
 .faqTitle {
-    color: white;
+    color: black;
     font-size: 36px;
 
 }
@@ -1273,9 +1269,9 @@ carousel {
 .question {
     width: 100%;
     max-width: 700px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid black;
     padding: 10px 0;
-    color: white;
+    color: black;
     margin: 10px
 }
 
@@ -1299,8 +1295,7 @@ carousel {
 }
 
 body {
-    background-color: rgb(0, 26, 35);
-
+    background-color: #e3cca4;
 }
 
 .gridparceiros {
@@ -1630,7 +1625,7 @@ input[type=radio] {
 
 .cardss {
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 100%;
     left: 0;
     right: 0;
