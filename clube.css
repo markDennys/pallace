@@ -377,6 +377,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 
@@ -782,6 +783,7 @@ li a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 10%;
 }
 
 .progress {
@@ -1343,7 +1345,12 @@ body {
     align-items: center;
     width: 100%;
 }
-
+.azuls{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sty {
     width: 80%;
     height: 3px;
