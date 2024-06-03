@@ -857,7 +857,7 @@ button {
         top: 12vh;
         left: 0px;
         height: 100vh;
-
+        z-index: 99999999999999999999999;
         position: absolute;
         right: 20px;
         clear: both;
@@ -2094,4 +2094,11 @@ button {
     * {
         display: none;
     }
+}
+
+.pone1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

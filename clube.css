@@ -829,7 +829,7 @@ li a {
         position: absolute;
         top: 12vh;
         height: 100vh;
-
+        z-index: 99999999999999999999999;
         right: 0px;
         clear: both;
         background-color: rgb(6, 188, 247);
@@ -1775,4 +1775,11 @@ input[type=radio] {
 
 #item-3:checked~.player #test {
     transform: translateY(-80px);
+}
+
+.pone1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
