@@ -115,3 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Automatically change items every 3 seconds
   setInterval(showNextItem, 5000);
 });
+
+
+document.querySelectorAll('input').forEach(function(input) {
+  input.addEventListener('change', function() {
+    document.body.classList.toggle('blue');
+  });
+});
