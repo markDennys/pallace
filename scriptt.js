@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Automatically change items every 3 seconds
-  setInterval(showNextItem, 5000);
+  setInterval(showNextItem, 50000000000000000);
 });
 
 
