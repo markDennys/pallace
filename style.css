@@ -138,7 +138,7 @@
 }
 
 .header .mobile-btn:checked~.nav {
-    max-height: 240px;
+    max-height: 500px;
 }
 
 .header .mobile-btn:checked~.mobile-icon .hamburguer {
@@ -1448,7 +1448,8 @@ button {
         flex-direction: column;
         position: absolute;
         top: 12vh;
-        height: 100vh;
+        height: 88vh;
+        justify-content: space-around;
         z-index: 99999;
         position: absolute;
         clear: both;

@@ -407,7 +407,7 @@
 }
 
 .header .mobile-btn:checked~.nav {
-    max-height: 240px;
+    max-height: 500px;
 }
 
 .header .mobile-btn:checked~.mobile-icon .hamburguer {
