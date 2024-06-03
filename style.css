@@ -1003,6 +1003,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
     flex-direction: column;
     width: 50%;
     height: 100%;
@@ -1015,11 +1016,11 @@ button {
 }
 
 .menOi {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .minor {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .diadoN {
@@ -1219,7 +1220,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
+    text-align: left;
     list-style: none;
     position: relative;
     margin-top: 10%;
@@ -1229,7 +1230,7 @@ button {
 
 
 .linoi {
-    font-size: 20px;
+    font-size: 14px !important;
     font-weight: 700;
     letter-spacing: -2px;
 }
@@ -1554,14 +1555,14 @@ button {
 
     .asdl {
         text-align: center;
-        font-size: 46px;
+        font-size: 26px !important;
         margin-bottom: 2%;
     }
 
     .orc {
         width: 100%;
         height: 70vh;
-        max-height: 400px;
+        max-height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1570,12 +1571,12 @@ button {
     }
 
     .zapzap {
-        background-color: #25D366 !important;
-        box-shadow: 10px 10px 0 #047a30 !important;
+        background-color: rgb(6, 188, 247) !important;
+        box-shadow: none !important;
     }
 
     .zapzap:hover {
-        box-shadow: 3px 3px 0px 0 #047a30 !important;
+        box-shadow: 3px 3px 0px 0 rgb(3, 141, 187) !important;
 
     }
 
@@ -2752,17 +2753,17 @@ carousel {
     z-index: 1;
 }
 
-.abae{
+.abae {
     background-color: white !important;
     height: 300vh !important;
 }
 
-.contaba{
+.contaba {
     width: 80%;
 
 }
 
-.memo{
+.memo {
     margin-top: 10px;
 }
 
