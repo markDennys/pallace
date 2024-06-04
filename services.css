@@ -1792,6 +1792,7 @@ button {
 .lies {
     color: white;
     line-height: 24px;
+    font-weight: 700;
 }
 
 .vid {

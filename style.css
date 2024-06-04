@@ -376,7 +376,7 @@ svg {
 .title-about {
     position: relative;
     z-index: 9099999;
-    color: white !important;
+    color: black !important;
 }
 
 .lis {
@@ -405,6 +405,9 @@ svg {
 .textshei {
     width: 90%;
     max-width: 450px;
+    color: black !important;
+    font-size: 16px;
+    font-weight: 500 !important;
 }
 
 .phoneC {
@@ -1240,8 +1243,9 @@ button {
 
 .linoi {
     font-size: 14px !important;
-    font-weight: 700;
-    letter-spacing: -2px;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0px;
 }
 
 .menneor {
