@@ -330,10 +330,15 @@ svg {
     z-index: 9999;
     position: relative;
     background-color: #7269fa;
-    box-shadow: 10px 10px 0px 0 #8c86e0;
+    color: white;
+    text-decoration: none;
     position: relative;
     transition: 0.4s;
-
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .btnavec:hover {
@@ -1210,12 +1215,14 @@ button {
     background-position: center;
 
 }
-.hid{
+
+.hid {
     background: url(./1q.png);
     background-size: cover;
     background-position: center;
 }
-.ihid{
+
+.ihid {
     background: url(./22.png);
     background-size: cover;
     background-position: center;
@@ -2075,8 +2082,9 @@ button {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .tituagen {
@@ -2086,7 +2094,7 @@ button {
     margin-left: 5%;
 }
 
-.subt{
+.subt {
     font-size: 14px;
     color: black;
 }
