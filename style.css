@@ -1103,12 +1103,18 @@ button {
 .orc {
     width: 100%;
     height: 70vh;
-    max-height: 300px;
+    max-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(218, 165, 32);
     flex-direction: column;
+}
+
+.porc {
+    width: 95%;
+    padding-left: 5%;
+
 }
 
 .zapzap {
@@ -1499,7 +1505,7 @@ button {
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 80%;
+        height: 60%;
         padding: 2%;
     }
 
@@ -1573,6 +1579,7 @@ button {
         text-align: center;
         font-size: 26px !important;
         margin-bottom: 2%;
+        color: black;
     }
 
     .orc {
