@@ -1943,7 +1943,7 @@ button {
     font-size: 46px;
     width: 1px;
     color: black;
-    right: 15px;
+    right: 25px;
 
 }
 
@@ -2121,11 +2121,24 @@ button {
     justify-content: center;
     align-items: center;
 }
+.zpazap {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    border-radius: 100%;
+    width: 3%;
+    z-index: 999999999999999;
+}
 
+.zz {
+    width: 50px !important;
+    background-color:green;
+    padding: 10px !important;
+    border-radius: 100%;
+}
 
 .contact-form {
 
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -2152,7 +2165,7 @@ button {
 
 .contact-form button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: rgb(218, 165, 32);
     border: none;
     border-radius: 4px;

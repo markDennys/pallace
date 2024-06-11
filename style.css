@@ -1114,7 +1114,7 @@ button {
 .porc {
     width: 100%;
     padding-left: 5%;
-font-weight: 600;
+    font-weight: 600;
 }
 
 .zapzap {
@@ -2795,4 +2795,20 @@ carousel {
     * {
         display: none;
     }
+}
+
+.zpazap {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    border-radius: 100%;
+    width: 3%;
+    z-index: 999999999999999;
+}
+
+.zz {
+    width: 50px !important;
+    background-color:green;
+    padding: 10px !important;
+    border-radius: 100%;
 }
