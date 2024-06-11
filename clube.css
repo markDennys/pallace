@@ -9,6 +9,24 @@
     display: none;
 }
 
+
+.zpazap {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    border-radius: 100%;
+    width: 3%;
+    z-index: 999999999999999;
+}
+
+.zz {
+    width: 70px !important;
+    background-color: green;
+    padding: 10px !important;
+    border-radius: 100%;
+}
+
+
 .header {
     height: 12vh;
     max-height: 90px;

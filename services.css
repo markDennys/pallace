@@ -2121,6 +2121,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+
 .zpazap {
     position: fixed;
     bottom: 20px;
@@ -2131,8 +2132,8 @@ button {
 }
 
 .zz {
-    width: 50px !important;
-    background-color:green;
+    width: 70px !important;
+    background-color: green;
     padding: 10px !important;
     border-radius: 100%;
 }
@@ -2154,7 +2155,8 @@ button {
     font-weight: bold;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -2176,7 +2178,7 @@ button {
 
 .contact-form button:hover {
     background-color: rgb(218, 165, 32);
-    
+
 }
 
 #status {
