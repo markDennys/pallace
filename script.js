@@ -133,6 +133,7 @@ function gtag_report_conversion(url) {
 }
 
 function call() {
+  console.log("aqui")
   gtag_report_conversion();
   enviarMensagemWhatsApps();
 }

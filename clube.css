@@ -13,17 +13,18 @@
 .zpazap {
     position: fixed;
     bottom: 20px;
-    right: 60px;
+    right: 20px;
     border-radius: 100%;
-    width: 3%;
+    width: auto;
     z-index: 999999999999999;
 }
 
 .zz {
-    width: 70px !important;
+    width: 60px !important;
     background-color: green;
     padding: 10px !important;
     border-radius: 100%;
+    border: none;
 }
 
 

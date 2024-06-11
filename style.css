@@ -2799,10 +2799,10 @@ carousel {
 
 .zpazap {
     position: fixed;
-    bottom: 20px;
-    right: 60px;
+    bottom: 0px;
+    right: 0px;
     border-radius: 100%;
-    width: 3%;
+    width: auto;
     z-index: 999999999999999;
 }
 

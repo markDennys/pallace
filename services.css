@@ -2124,15 +2124,15 @@ button {
 
 .zpazap {
     position: fixed;
-    bottom: 20px;
-    right: 60px;
+    bottom: 0;
+    right: 0;
     border-radius: 100%;
-    width: 3%;
+    width: auto;
     z-index: 999999999999999;
 }
 
 .zz {
-    width: 70px !important;
+    width: 85px !important;
     background-color: green;
     padding: 10px !important;
     border-radius: 100%;
