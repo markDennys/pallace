@@ -2139,9 +2139,23 @@ button {
 }
 
 .contact-form {
-    width: 90%;
+    background-color: rgb(218, 165, 32);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.h44 {
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .contact-form h1 {
@@ -2166,9 +2180,10 @@ button {
 }
 
 .contact-form button {
-    width: 100%;
+    width: 50%;
     padding: 15px;
-    background-color: rgb(218, 165, 32);
+    background-color: rgb(6, 188, 247);
+    margin-right: auto;
     border: none;
     border-radius: 4px;
     color: black;
@@ -2178,6 +2193,10 @@ button {
 
 .contact-form button:hover {
     background-color: rgb(218, 165, 32);
+    background-color: rgb(218, 165, 32);
+    background-color: rgb(6, 188, 247);
+
+
 
 }
 
