@@ -19,8 +19,7 @@ document
         console.log("Erro:", error);
       }
     );
-  });
-
+  }); 
 function call() {
   console.log("aqui");
   gtag_report_conversion();

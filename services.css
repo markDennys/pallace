@@ -558,7 +558,7 @@ button {
 }
 
 .membros .me {
-    width: 25%;
+    width: 28%;
     height: 100%;
     cursor: pointer;
     display: flex;
@@ -584,7 +584,7 @@ button {
 }
 
 .vittor {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vivi.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -592,21 +592,21 @@ button {
 }
 
 .and {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./andan.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .dem {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./demdemde.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .del {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./gid.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./gidgids.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
