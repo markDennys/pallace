@@ -4,6 +4,7 @@ document
     event.preventDefault();
 
     const status = document.getElementById("status");
+    
     const serviceID = "service_sxldawf";
     const templateID = "template_0j5ge8f";
 
@@ -56,3 +57,29 @@ function enviarMensagemWhatsApps() {
   // Redireciona para o WhatsApp
   window.location.href = linkWhatsApp;
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const telefoneInput = document.getElementById('telefone');
+
+  telefoneInput.addEventListener('input', function(e) {
+      let input = e.target.value;
+      
+      // Remove tudo que não for dígito
+      input = input.replace(/\D/g, '');
+
+      // Aplica a máscara
+      if (input.length > 10) {
+          input = input.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+      } else if (input.length > 5) {
+          input = input.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+      } else if (input.length > 2) {
+          input = input.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+      } else {
+          input = input.replace(/^(\d*)/, '($1');
+      }
+
+      // Atualiza o valor do input
+      e.target.value = input;
+  });
+});

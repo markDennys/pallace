@@ -584,7 +584,7 @@ button {
 }
 
 .vittor {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vivi.png');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./equie\ \(2\).png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -592,21 +592,21 @@ button {
 }
 
 .and {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./andan.png');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./equie\ \(3\).png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .dem {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./demdemde.png');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./equie\ \(4\).png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .del {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./gidgids.png');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./equie\ \(1\).png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
