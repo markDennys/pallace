@@ -1,26 +1,31 @@
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const status = document.getElementById("status");
-    
-    const serviceID = "service_sxldawf";
-    const templateID = "template_0j5ge8f";
+  const status = document.getElementById("status");
+  const loading = document.getElementById("loading");
+  const serviceID = "service_sxldawf";
+  const templateID = "template_0j5ge8f";
 
-    emailjs.sendForm(serviceID, templateID, this).then(
+  // Mostrar o indicador de loading
+  loading.style.display = "block";
+  status.textContent = ""; // Limpa a mensagem de status anterior
+
+  emailjs.sendForm(serviceID, templateID, this).then(
       () => {
-        status.textContent = "Mensagem enviada com sucesso!";
-        status.style.color = "green";
-        document.getElementById("contactForm").reset();
+          loading.style.display = "none"; // Esconde o indicador de loading
+          status.textContent = "Mensagem enviada com sucesso!";
+          status.style.color = "green";
+          document.getElementById("contactForm").reset();
       },
       (error) => {
-        status.textContent = "Erro ao enviar mensagem.";
-        status.style.color = "red";
-        console.log("Erro:", error);
+          loading.style.display = "none"; // Esconde o indicador de loading
+          status.textContent = "Erro ao enviar mensagem.";
+          status.style.color = "red";
+          console.log("Erro:", error);
       }
-    );
-  }); 
+  );
+});
+
 function call() {
   console.log("aqui");
   gtag_report_conversion();
@@ -29,46 +34,32 @@ function call() {
 
 function gtag_report_conversion(url) {
   var callback = function () {
-    if (typeof url != "undefined") {
-      window.location = url;
-    }
+      if (typeof url != "undefined") {
+          window.location = url;
+      }
   };
   gtag("event", "conversion", {
-    send_to: "AW-16550047262/hKkXCOeQ6qsZEJ7c1tM9",
-    event_callback: callback,
+      send_to: "AW-16550047262/hKkXCOeQ6qsZEJ7c1tM9",
+      event_callback: callback,
   });
   return false;
 }
 
 function enviarMensagemWhatsApps() {
-  // Número de telefone para o qual você deseja enviar a mensagem
   var numeroTelefone = "558194622071"; // Substitua pelo número desejado, incluindo o código do país
-
-  // Mensagem pré-selecionada
   var mensagem = "Olá! gostaria de tirar uma dúvida.";
-
-  // Codifica a mensagem para que possa ser incluída no URL
   var mensagemCodificada = encodeURIComponent(mensagem);
-
-  // Monta o link para o WhatsApp com o número de telefone e a mensagem pré-selecionada
-  var linkWhatsApp =
-    "https://wa.me/" + numeroTelefone + "?text=" + mensagemCodificada;
-
-  // Redireciona para o WhatsApp
+  var linkWhatsApp = "https://wa.me/" + numeroTelefone + "?text=" + mensagemCodificada;
   window.location.href = linkWhatsApp;
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const telefoneInput = document.getElementById('telefone');
 
   telefoneInput.addEventListener('input', function(e) {
       let input = e.target.value;
-      
-      // Remove tudo que não for dígito
       input = input.replace(/\D/g, '');
 
-      // Aplica a máscara
       if (input.length > 10) {
           input = input.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
       } else if (input.length > 5) {
@@ -79,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
           input = input.replace(/^(\d*)/, '($1');
       }
 
-      // Atualiza o valor do input
       e.target.value = input;
   });
 });
