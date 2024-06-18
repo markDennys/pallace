@@ -1629,11 +1629,7 @@ button {
 
 }
 
-.ani {
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: all 1s;
-}
+ 
 
 .anit {
     opacity: 0;

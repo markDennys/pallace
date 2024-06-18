@@ -298,7 +298,7 @@ svg {
     color: white;
     text-decoration: none;
     position: relative;
-    transition: 0.4s;
+    transition: 3s !important;
 
 }
 
@@ -2437,7 +2437,7 @@ carousel {
 
 .ani {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateY(50%);
     transition: all 1.5s;
 }
 
