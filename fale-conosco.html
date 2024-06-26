@@ -83,15 +83,17 @@
           required
           placeholder="E-mail"
         />
-        
+
         <textarea
           id="message"
           name="message"
           rows="5"
           placeholder="Mensagem"
         ></textarea>
-        <button type="submit">Enviar</button>
-        <div id="loading" style="display: none">Enviando...</div>
+        <button type="submit">
+          <span id="loadingYet" style="display: block;">Enviar</span>
+          <span id="loading" style="display: none;"> Enviando...</span>
+        </button>
         <div id="status"></div>
       </form>
     </section>

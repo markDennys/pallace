@@ -3,22 +3,27 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
   const status = document.getElementById("status");
   const loading = document.getElementById("loading");
+  const loadingYet = document.getElementById("loadingYet");
+
   const serviceID = "service_sxldawf";
   const templateID = "template_0j5ge8f";
 
   // Mostrar o indicador de loading
   loading.style.display = "block";
+  loadingYet.style.display = "none";
   status.textContent = ""; // Limpa a mensagem de status anterior
 
   emailjs.sendForm(serviceID, templateID, this).then(
       () => {
           loading.style.display = "none"; // Esconde o indicador de loading
+          loadingYet.style.display = "block";
           status.textContent = "Mensagem enviada com sucesso!";
           status.style.color = "green";
           document.getElementById("contactForm").reset();
       },
       (error) => {
           loading.style.display = "none"; // Esconde o indicador de loading
+          loadingYet.style.display = "block";
           status.textContent = "Erro ao enviar mensagem.";
           status.style.color = "red";
           console.log("Erro:", error);
