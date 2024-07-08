@@ -156,3 +156,67 @@ function enviarMensagemWhatsApps() {
   window.location.href = linkWhatsApp;
 }
 
+
+
+function redirecionarParaOutroSite1(site) {
+  var url = 'https://www.instagram.com/aromasvinhos';
+  window.open(url, '_blank');
+}
+
+
+function redirecionarParaOutroSite2(site) {
+  var url = 'https://www.instagram.com/deluxejoiasrecife/';
+  window.open(url, '_blank');
+}
+
+
+function redirecionarParaOutroSite3(site) {
+  var url = 'https://www.instagram.com/viaoculosprime/';
+  window.open(url, '_blank');
+}
+
+
+function redirecionarParaOutroSite4(site) {
+  var url = 'https://www.instagram.com/dra.reginabezerra/';
+  window.open(url, '_blank');
+}
+
+
+
+
+function redirecionarParaWhatsApp1() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+5581994714221';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
+function redirecionarParaWhatsApp2() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+5581983336180';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
+function redirecionarParaWhatsApp3() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+5581971048450';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
+function redirecionarParaWhatsApp4() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+5581998885881';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
