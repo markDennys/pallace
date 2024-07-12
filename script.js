@@ -163,6 +163,11 @@ function redirecionarParaOutroSite1(site) {
   window.open(url, '_blank');
 }
 
+function redirecionarParaOutroSite12(site) {
+  var url = 'https://www.instagram.com/_carros96/';
+  window.open(url, '_blank');
+}
+
 
 function redirecionarParaOutroSite2(site) {
   var url = 'https://www.instagram.com/deluxejoiasrecife/';
@@ -214,6 +219,18 @@ function redirecionarParaWhatsApp3() {
 function redirecionarParaWhatsApp4() {
   // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
   var numeroTelefone = '+5581998885881';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
+
+
+
+function redirecionarParaWhatsApp41() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+558197501082';  // Substitua pelo número desejado
   // Montar o link do WhatsApp com o número de telefone
   var url = 'https://wa.me/' + numeroTelefone;
 
