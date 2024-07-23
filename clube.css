@@ -1381,10 +1381,17 @@ body {
 
 .parpar {
     margin-top: 30px;
-    width: 60%;
+    width: 90%;
     text-align: center;
     color: white;
 }
+.sss{
+    width: 100%;
+}
+#toggleText {
+    display: none;
+    font-size: 10px;
+  }
 
 .black {
     font-weight: 600;

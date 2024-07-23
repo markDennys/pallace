@@ -237,3 +237,15 @@ function redirecionarParaWhatsApp41() {
   // Abrir o link no WhatsApp em uma nova aba
   window.open(url, '_blank');
 }
+
+
+const toggleButton = document.getElementById('toggleButton');
+const toggleText = document.getElementById('toggleText');
+
+toggleButton.addEventListener('click', function() {
+  if (toggleText.style.display === 'block') {
+    toggleText.style.display = 'none';
+  } else {
+    toggleText.style.display = 'block';
+  }
+});
