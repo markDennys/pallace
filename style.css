@@ -1876,6 +1876,21 @@ button {
         background-size: 150%;
     }
 
+    .equiVS {
+        width: 45%;
+        height: 50%;
+        background: url(vit.jpg);
+        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('vs.png');
+        background-position: center;
+        background-size: cover;
+        background-position:
+            calc(100% - 80%) calc(100% - 0%);
+
+
+        background-size: 150%;
+    }
+
+
     .equiA {
 
         width: 45%;
@@ -2779,11 +2794,11 @@ carousel {
 
 .abae {
     background-color: white !important;
-    height: 300vh !important;
+    height: 250vh !important;
 }
 
 .contaba {
-    width: 80%;
+    width: 85%;
 
 }
 
