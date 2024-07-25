@@ -1881,7 +1881,7 @@ button {
         background-position: center;
         background-size: cover;
         background-position:
-            calc(100% - 50%) calc(100% - 0%);
+            calc(100% - 50%) calc(100% - 20%);
 
 
         background-size: 140%;
