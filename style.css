@@ -1869,10 +1869,7 @@ button {
         background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('vit.jpg');
         background-position: center;
         background-size: cover;
-        background-position:
-            calc(100% - 80%) calc(100% - 90%);
-
-
+        background-position: calc(100% - 55%) calc(100% - 90%);
         background-size: 150%;
     }
 
@@ -1880,14 +1877,14 @@ button {
         width: 45%;
         height: 50%;
         background: url(vit.jpg);
-        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('vs.png');
+        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('NOCA.png');
         background-position: center;
         background-size: cover;
         background-position:
-            calc(100% - 80%) calc(100% - 0%);
+            calc(100% - 50%) calc(100% - 0%);
 
 
-        background-size: 150%;
+        background-size: 140%;
     }
 
 
@@ -1900,10 +1897,7 @@ button {
         background-position: center;
         background-size: cover;
         background-size: cover;
-        background-position:
-            calc(100% - 80%) calc(100% - 80%);
-
-
+        background-position: calc(100% - 45%) calc(100% - 80%);
         background-size: 150%;
     }
 
@@ -1915,11 +1909,8 @@ button {
         background-position: center;
         background-size: cover;
         background-size: cover;
-        background-position:
-            calc(100% - 80%) calc(100% - 80%);
-
-
-        background-size: 150%;
+        background-position: calc(100% - 58%) calc(100% - 35%);
+        background-size: 180%;
     }
 
     .equiG {
