@@ -1877,14 +1877,14 @@ button {
         width: 45%;
         height: 50%;
         background: url(vit.jpg);
-        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('NOCA.png');
+        background: linear-gradient(90deg, rgba(0, 191, 255, 0), rgba(0, 71, 95, 0)), url('casaas.png');
         background-position: center;
         background-size: cover;
         background-position:
-            calc(100% - 50%) calc(100% - 20%);
+            calc(100% - 25%) calc(100% - 20%);
 
 
-        background-size: 140%;
+        background-size: 110%;
     }
 
 
