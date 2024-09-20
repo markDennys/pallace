@@ -11,7 +11,7 @@
 
 .header {
     height: 12vh;
-    max-height: 90px;
+    max-height: 80px;
     background-color: rgb(6, 188, 247);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -48,6 +48,23 @@
 }
 
 
+.clube {
+    background-color: rgb(218, 165, 32);
+}
+
+.maps {
+    width: 100%;
+    height: 30vh;
+
+    background: linear-gradient(-90deg, rgba(0, 49, 67, 0), rgb(0, 41, 53, 0)), url('mapss.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .header li a:hover,
 .header .btn-mobile:hover {
@@ -64,6 +81,7 @@
 
 .header .nav {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     clear: both;
@@ -165,6 +183,14 @@ li a {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+    .header .nav {
+
+        height: 10vh;
+    }
+
+    .header .nav li a {
+        font-size: 14px;
+    }
 
     .header li {
         float: left;
@@ -239,9 +265,8 @@ li a {
 .titulo {
     position: relative;
     z-index: 3;
-    font-size: 70px;
+    font-size: 40px;
     color: white;
-    letter-spacing: -5px;
 
 }
 
@@ -1115,6 +1140,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -1629,7 +1655,7 @@ button {
 
 }
 
- 
+
 
 .anit {
     opacity: 0;
@@ -1650,7 +1676,7 @@ button {
 
 .ourHistory {
     width: 100%;
-    height: 170vh;
+    height: 180vh;
     max-height: 1200px;
     margin-top: 12vh;
     background-color: white;
@@ -1765,6 +1791,7 @@ button {
 .palaceplace {
     width: 95%;
     margin: 10px;
+    max-width: 300px;
 }
 
 .imagesPa {
@@ -1969,7 +1996,6 @@ button {
 .footer {
     position: relative;
     display: flex;
-    flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
     background-color: rgb(6, 188, 247);
@@ -1994,6 +2020,7 @@ button {
 
 .footer__addr .logo {
     width: 50%;
+    max-width: 100px;
 }
 
 .nav__title {
@@ -2038,7 +2065,8 @@ button {
 
 .footer__nav {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__nav>* {
@@ -2051,6 +2079,7 @@ button {
     bottom: 0;
     right: 0;
     width: 100%;
+    max-width: 400px;
     opacity: 0.3;
     z-index: 1;
 }
@@ -2098,8 +2127,97 @@ button {
 
 
 @media (min-width: 700px) {
-    * {
-        display: none;
+    * {}
+
+    .contact-form {
+        padding-top: 10%;
+    }
+
+    .h44 {
+        width: 600px;
+        font-size: 14px;
+        margin-top: 50px;
+        padding-top:30px;
+        text-align: center;
+    }
+
+    .paraghistory {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
+    .followus {
+        height: auto;
+        width: 66%;
+        background-color: rgb(6, 188, 247);
+        margin-top: 3%;
+        padding-bottom: 2%;
+        margin: 0 auto;
+    }
+
+    .parahist {
+        padding-top: 4%;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .agende {
+        width: 100%;
+        height: 60vh;
+        max-height: 400px;
+        background-image: url(te.png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-container .prev {
+        position: absolute;
+        width: 1px;
+        font-size: 46px;
+        left: 27%;
+
+        color: black;
+    }
+
+    .carousel-container .next {
+        position: absolute;
+        font-size: 46px;
+        width: 1px;
+        color: black;
+        right: 27%;
+
+    }
+
+    .body {
+        margin-top: 0;
+    }
+
+    .btnavec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        z-index: 9999;
+        position: relative;
+        background-color: #7269fa;
+        color: white;
+        text-decoration: none;
+        position: relative;
+        transition: 0.4s;
+        width: 20%;
+        height: 40px;
+        font-size: 16px;
+        margin-left: 5%;
+        margin-top: 5%;
     }
 }
 

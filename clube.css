@@ -27,10 +27,9 @@
     border: none;
 }
 
-
 .header {
     height: 12vh;
-    max-height: 90px;
+    max-height: 80px;
     background-color: rgb(6, 188, 247);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -71,10 +70,23 @@
     background-color: rgb(218, 165, 32);
 }
 
+.maps {
+    width: 100%;
+    height: 30vh;
+
+    background: linear-gradient(-90deg, rgba(0, 49, 67, 0), rgb(0, 41, 53, 0)), url('mapss.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header li a:hover,
 .header .btn-mobile:hover {
     background-color: #02a1ee;
-
     color: #fff;
 }
 
@@ -87,28 +99,13 @@
 
 .header .nav {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     clear: both;
     background-color: rgb(6, 188, 247);
-
-
     max-height: 0;
     transition: max-height .2s ease-out;
-}
-
-.btn-cl {
-    margin-top: 5%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    background-color: transparent;
-    border: 3px solid white;
-    width: 70%;
-    height: 70px;
-    color: white;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 10px 20px 0 rgb(175, 175, 175);
 }
 
 /* menu icon */
@@ -149,6 +146,34 @@
 .header .mobile-icon .hamburguer:after {
     top: -5px;
 }
+
+/* menu btn */
+
+.header .mobile-btn {
+    display: none;
+}
+
+.header .mobile-btn:checked~.nav {
+    max-height: 500px;
+}
+
+.header .mobile-btn:checked~.mobile-icon .hamburguer {
+    background: transparent;
+}
+
+.header .mobile-btn:checked~.mobile-icon .hamburguer:before {
+    transform: rotate(-45deg);
+}
+
+.header .mobile-btn:checked~.mobile-icon .hamburguer:after {
+    transform: rotate(45deg);
+}
+
+.header .mobile-btn:checked~.mobile-icon:not(.steps) .hamburguer:before,
+.header .mobile-btn:checked~.mobile-icon:not(.steps) .hamburguer:after {
+    top: 0;
+}
+
 
 .clube-container {
     width: 100%;
@@ -484,6 +509,15 @@ li a {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+    .header .nav {
+
+        height: 10vh;
+    }
+
+    .header .nav li a {
+        font-size: 14px;
+    }
+
 
     .header li {
         float: left;
@@ -854,7 +888,45 @@ li a {
     margin-right: 10px;
 }
 
+
+.gridparceiros {
+
+    max-height: 9000000px !important;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 80%;
+    height: 180vh !important;
+    max-height: 2500px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+}
+.par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27% !important;
+    height: 20% !important;
+}
+
+
 @media (max-width:700px) {
+    .par {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 33% !important;
+        height: 15% !important;
+    }
+    
     .header .nav {
         display: flex;
         flex-direction: column;
@@ -869,7 +941,17 @@ li a {
         max-height: 0;
         transition: max-height .2s ease-out;
     }
-
+    .azul {
+        background-color: rgb(6, 188, 247);
+        text-align: center;
+        color: white;
+        max-height: 30px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     .avec {
         height: 100vh;
         background-position: center;
@@ -1182,6 +1264,12 @@ li a {
         flex-direction: column;
         height: 270vh !important;
         max-height: 9000000px !important;
+        max-width: 1020px;
+        margin: 0 auto;
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .par {
@@ -1330,13 +1418,7 @@ body {
     background-color: white;
 }
 
-.gridparceiros {
-    max-width: 1500px;
-    margin: 0 auto;
-    width: 100%;
-    height: 60vh;
-    display: flex;
-}
+ 
 
 .par {
     display: flex;
@@ -1360,19 +1442,21 @@ body {
     align-items: flex-start;
     justify-content: space-around;
 }
-.instaas{
+
+.instaas {
     width: 100px;
     height: 50px;
     background-color: rgba(6, 187, 247, 0.776);
     border: none;
 }
 
-.zapzapz{
+.zapzapz {
     width: 100px;
     height: 50px;
     border: none;
     background-color: rgba(218, 165, 32, 0.742);
 }
+
 .instaaa {
     display: flex;
     justify-content: flex-start;
@@ -1385,13 +1469,15 @@ body {
     text-align: center;
     color: white;
 }
-.sss{
+
+.sss {
     width: 100%;
 }
+
 #toggleText {
     display: none;
     font-size: 10px;
-  }
+}
 
 .black {
     font-weight: 600;
@@ -1403,11 +1489,11 @@ body {
     text-align: center;
     color: white;
     max-height: 30px;
-    height: 50px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
 }
 
 .azuls {
@@ -1473,10 +1559,9 @@ body {
 .titulo {
     position: relative;
     z-index: 3;
-    font-size: 70px;
+    font-size: 40px;
     color: white;
-    letter-spacing: -5px;
-
+    text-align: center;
 }
 
 .linha {
@@ -1571,7 +1656,6 @@ body {
 .footer {
     position: relative;
     display: flex;
-    flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
     background-color: rgb(6, 188, 247);
@@ -1596,6 +1680,7 @@ body {
 
 .footer__addr .logo {
     width: 50%;
+    max-width: 100px;
 }
 
 .nav__title {
@@ -1640,7 +1725,8 @@ body {
 
 .footer__nav {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__nav>* {
@@ -1653,6 +1739,7 @@ body {
     bottom: 0;
     right: 0;
     width: 100%;
+    max-width: 400px;
     opacity: 0.3;
     z-index: 1;
 }
@@ -1686,8 +1773,49 @@ body {
 
 
 @media (min-width: 700px) {
-    * {
+    * {}
+
+    .blyue {
         display: none;
+    }
+
+    .containerss {
+        width: 100%;
+        max-width: 900px;
+        max-height: 900000px !important;
+        height: 140vh !important;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .cardss {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        left: 28% !important;
+        right: 0;
+        margin: auto;
+        transition: transform .4s ease;
+        cursor: pointer;
+    }
+
+    .mais {
+        position: absolute;
+        background-color: rgb(218, 165, 32);
+
+        padding: 5px;
+        top: 0px;
+        width: 90%;
+        text-align: center;
     }
 }
 
