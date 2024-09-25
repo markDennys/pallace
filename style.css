@@ -1620,12 +1620,12 @@ button {
     width: 45%;
     height: 100%;
     background: url(dem.jpg);
-    background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('dem.jpg');
+    background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('equie\ \(4\).png');
     background-position: center;
     background-size: cover;
     background-size: cover;
-    background-position: calc(100% - 58%) calc(100% - 35%);
-    background-size: 180%;
+    background-position: calc(100% - 58%) calc(100% - 80%);
+    background-size: 120%;
 }
 
 .equiG {
@@ -2145,12 +2145,12 @@ button {
         width: 45%;
         height: 50%;
         background: url(dem.jpg);
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('dem.jpg');
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('equie\ \(4\).png');
         background-position: center;
         background-size: cover;
         background-size: cover;
-        background-position: calc(100% - 58%) calc(100% - 35%);
-        background-size: 180%;
+        background-position: calc(100% - 58%) calc(100% - 90%);
+        background-size: 120%;
     }
 
     .equiG {
