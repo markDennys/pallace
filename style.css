@@ -629,6 +629,7 @@ svg {
     background-size: cover;
 
 }
+
 .bruno {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./bru.jpeg');
     background-repeat: no-repeat;
@@ -1588,7 +1589,7 @@ button {
     background-position: center;
     background-size: cover;
     background-position: calc(100% - 55%) calc(100% - 90%);
-   
+
 }
 
 .equiVS {
@@ -1696,7 +1697,19 @@ button {
     align-items: center;
 }
 
+.mobilebody {
+    display: none !important;
+}
+
+.deskbody {
+    display: flex !important;
+}
+
 @media (max-width:700px) {
+    .mobilebody {
+        display: flex !important;
+    }
+
     .header .nav {
         display: flex;
         flex-direction: column;
@@ -2127,6 +2140,9 @@ button {
         background-size: 150%;
     }
 
+    .deskbody {
+        display: none !important;
+    }
 
     .equiA {
 
@@ -2140,7 +2156,13 @@ button {
         background-position: calc(100% - 45%) calc(100% - 80%);
         background-size: 150%;
     }
-
+    .mmm{
+        display: block !important;
+    }
+    .ddd{
+        display: none !important;
+    }
+    
     .equiD {
         width: 45%;
         height: 50%;
@@ -2738,10 +2760,15 @@ carousel {
 
     filter: blur(0px);
 }
-
+.mmm{
+    display: none ;
+}
+.ddd{
+    display: block ;
+}
 
 .body {
-    width: 30%;
+    width: 100%;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -2872,6 +2899,8 @@ carousel {
     background-color: rgb(6, 188, 247);
     border-top: 1px solid #e5e5e5;
 }
+
+
 
 .footer>* {
     flex: 1 100%;
@@ -3086,9 +3115,10 @@ carousel {
 }
 
 @media (min-width: 700px) {
-    .abae{
+    .abae {
         height: 100vh !important;
     }
+
     .header .nav {
 
         height: 10vh;
