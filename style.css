@@ -2156,13 +2156,15 @@ button {
         background-position: calc(100% - 45%) calc(100% - 80%);
         background-size: 150%;
     }
-    .mmm{
+
+    .mmm {
         display: block !important;
     }
-    .ddd{
+
+    .ddd {
         display: none !important;
     }
-    
+
     .equiD {
         width: 45%;
         height: 50%;
@@ -2586,7 +2588,7 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 90%);
+            calc(100% - 80%) calc(100% - 90%) !important; 
 
 
         background-size: 150%;
@@ -2596,8 +2598,7 @@ button {
     .bruno {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./bru.jpeg');
         background-repeat: no-repeat;
-        background-position:
-            calc(100% - 80%) calc(100% - 90%);
+        background-position: calc(100% - 51%) calc(100% - 75%);
 
 
         background-size: 150%;
@@ -2608,7 +2609,7 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 80%);
+            calc(100% - 80%) calc(100% - 80%) !important;
 
 
         background-size: 150%;
@@ -2618,7 +2619,7 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 70%);
+            calc(100% - 80%) calc(100% - 70%) !important;
 
 
         background-size: 150%;
@@ -2760,11 +2761,13 @@ carousel {
 
     filter: blur(0px);
 }
-.mmm{
-    display: none ;
+
+.mmm {
+    display: none;
 }
-.ddd{
-    display: block ;
+
+.ddd {
+    display: block;
 }
 
 .body {
