@@ -2619,10 +2619,10 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 70%) !important;
+            calc(100% - 80%) calc(100% - 90%) !important;
 
 
-        background-size: 150%;
+        background-size: 100%;
     }
 
     .del {
