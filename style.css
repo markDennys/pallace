@@ -637,6 +637,13 @@ svg {
     background-size: cover;
 
 }
+.jj {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./jj.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
 
 .and {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
@@ -2597,6 +2604,16 @@ button {
 
     .bruno {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./bru.jpeg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 51%) calc(100% - 75%);
+
+
+        background-size: 150%;
+
+    }
+
+    .jj {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./jj.jpg');
         background-repeat: no-repeat;
         background-position: calc(100% - 51%) calc(100% - 75%);
 

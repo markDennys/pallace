@@ -168,6 +168,10 @@ function redirecionarParaOutroSite12(site) {
   window.open(url, '_blank');
 }
 
+function redirecionarParaOutroSite13(site) {
+  var url = 'https://www.instagram.com/brokie.confeitaria/';
+  window.open(url, '_blank');
+}
 
 function redirecionarParaOutroSite2(site) {
   var url = 'https://www.instagram.com/deluxejoiasrecife/';
@@ -237,6 +241,17 @@ function redirecionarParaWhatsApp41() {
   // Abrir o link no WhatsApp em uma nova aba
   window.open(url, '_blank');
 }
+
+function redirecionarParaWhatsApp42() {
+  // Número de telefone (inclua o código do país, por exemplo +55 para Brasil)
+  var numeroTelefone = '+558191655401';  // Substitua pelo número desejado
+  // Montar o link do WhatsApp com o número de telefone
+  var url = 'https://wa.me/' + numeroTelefone;
+
+  // Abrir o link no WhatsApp em uma nova aba
+  window.open(url, '_blank');
+}
+
 
 
 const toggleButton = document.getElementById('toggleButton');
