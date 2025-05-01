@@ -297,12 +297,13 @@ svg {
     cursor: pointer;
     z-index: 9999;
     position: relative;
-    background-color: #7269fa;
+    background-color: rgb(6, 188, 247);
     color: white;
+    font-weight: bold;
     text-decoration: none;
     position: relative;
     transition: 3s !important;
-
+    height: 50px;
 }
 
 .btnavec:hover {
