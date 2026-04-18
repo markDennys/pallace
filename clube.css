@@ -60,7 +60,7 @@
     text-decoration: none;
     transition: .3s;
     border-bottom: 1px #f7f7f7 solid;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
 }
@@ -570,7 +570,7 @@ li a {
     font-size: 0.875em;
 }
 
-/* 
+/*
 .main-footer img {
     position: absolute;
     bottom: 0;
@@ -928,7 +928,7 @@ li a {
         width: 33% !important;
         height: 15% !important;
     }
-    
+
     .header .nav {
         display: flex;
         flex-direction: column;
@@ -1420,7 +1420,7 @@ body {
     background-color: white;
 }
 
- 
+
 
 .par {
     display: flex;
@@ -2012,3 +2012,134 @@ input[type=radio] {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.parceirosxxx {
+    /* margin-top: 10vh !; */
+}
+
+.containerxxx {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+/* BLOCO */
+.itemxxx {
+  height: 280px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+}
+
+/* IMAGEM */
+.itemxxx img {
+  max-width: 120px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* TEXTO */
+.itemxxx p {
+  font-size: 14px;
+}
+
+.itemxxx span {
+  font-size: 10px;
+}
+
+/* REDES */
+.redessxxx {
+  display: flex;
+  gap: 10px;
+}
+
+.redessxxx button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* BLOCO GRANDE */
+.destaquexxx {
+  grid-column: span 2;
+  color: black;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaquexxx h1 {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.destaquexxx h2 {
+  font-size: 16px;
+  margin-top: 5px;
+margin-bottom: 10px;
+}
+.qrc{
+    width: 1220px !important;
+}
+
+ 
+
+/* CORES */
+.p1 { background: #000; }
+.p2 { background: white; }
+.p3 { background: #ECE9E0; }
+.p4 { background: #064B38; }
+.p5 { background: #000; }
+.p6 { background: #43627F; }
+.p7 { background: #A40027; }
+.p8 { background: white; }
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .containerxxx {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destaquexxx {
+
+    grid-column: span 2;
+    
+}
+}
+
+@media (max-width: 500px) {
+  .containerxxx {
+    grid-template-columns: 1fr;
+  }
+
+  .destaquexxx {
+    grid-column: span 1;
+  }
+}
+.btnsocialxxx svg {
+  color: white;
+}
+
+.btnavec {
+    display: flex;
+    cursor: pointer;
+    z-index: 9999;
+    position: relative;
+    background-color: rgb(6, 188, 247) !important;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: 3s !important;
+    height: 50px;
+    width: 200px !important;
+}
+
+ 

@@ -1,14 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./1111.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./1111.png" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
@@ -27,7 +33,7 @@
       gtag("js", new Date());
       gtag("config", "AW-16550047262");
     </script>
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-16550047262"
@@ -58,14 +64,15 @@
         ></label>
 
         <ul class="nav">
-          <li><a href="index.html" title="Home">ínicio</a></li>
-          <li><a href="historia.html" title="Sobre">a Barbearia</a></li>
+          <!-- <li><a href="index.html" title="Home">ínicio</a></li> -->
+          <li><a href="historia.html" title="Sobre">História</a></li>
           <li><a href="equipe-pallace.html" title="Sobre">Equipe</a></li>
 
           <li><a href="services.html" title="Sobre">Serviços</a></li>
           <li><a href="fale-conosco.html" title="Sobre">Fale Conosco</a></li>
 
           <li><a href="clube.html" class="clube" title="Contato">CLUBE</a></li>
+          <li><a href="parceiros.html"  title="Contato">Parceiros</a></li>
           <li><a href="noivo.html" title="Contato">Dia do Noivo</a></li>
         </ul>
 
@@ -95,9 +102,11 @@
             força que sua imagem pode alcançar.
           </h1>
           <div class="wid40">
-            <a class="btnavec ani" href="https://sites.appbarber.com.br/pallacebarbeari-2v7d">
+            <a
+              class="btnavec ani"
+              href="https://sites.appbarber.com.br/pallacebarbeari-2v7d"
+            >
               Agendar
-    
             </a>
             <p class="fontClick">Clica aqui</p>
           </div>
@@ -226,7 +235,7 @@
       </div>
     </section>
 
-    <section class="equipePa">
+     <section class="equipePa">
       <h1 class="titleRquipe">
         <span>Conheça Nossa Equipe</span>
       </h1>
@@ -314,29 +323,24 @@
       <section class="carousel-container">
         <div class="carousel">
           <div class="item active">
-            <img src="fad (1).png" alt="Image 1" class="mmm"  />
+            <img src="fad (1).png" alt="Image 1" class="mmm" />
             <img src="ffeed (1).png" alt="Image 1" class="ddd" />
-
           </div>
           <div class="item">
             <img src="fad (2).png" alt="Image 2" class="mmm" />
             <img src="ffeed (2).png" alt="Image 2" class="ddd" />
-
           </div>
           <div class="item">
-            <img src="fad (3).png" alt="Image 3" class="mmm"  />
+            <img src="fad (3).png" alt="Image 3" class="mmm" />
             <img src="ffeed (3).png" alt="Image 3" class="ddd" />
-
           </div>
           <div class="item">
-            <img src="fad (4).png" alt="Image 3" class="mmm"  />
+            <img src="fad (4).png" alt="Image 3" class="mmm" />
             <img src="ffeed (4).png" alt="Image 3" class="ddd" />
-
           </div>
           <div class="item">
             <img src="fad (5).png" alt="Image 3" class="mmm" />
             <img src="ffeed (5).png" alt="Image 3" class="ddd" />
-
           </div>
         </div>
         <button style="display: none" class="prev"></button>
@@ -347,16 +351,14 @@
       </section>
     </div>
 
- 
+    <div class="map-container">
+      <div id="map"></div>
 
-    <section class="maps">
-      <a
-        href="https://maps.app.goo.gl/weBwhJh8T51vEc828"
-        style="color: black; text-decoration: none"
-        class="btnGoEquipes"
-        >Saiba como chegar.
-      </a>
-    </section>
+      <!-- Overlay -->
+      <div class="map-overlay">
+        <button id="btnMaps">Como chegar</button>
+      </div>
+    </div>
 
     <footer class="footer">
       <img src="dudu.png" class="solut" alt="" />
@@ -419,6 +421,52 @@
         Pallace Barbearia - 2021, todos os direitos reservados.
       </p>
     </section>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var lat = -8.17770459086736;
+        var lng = -34.91923955538193;
+
+        var map = L.map("map", {
+          center: [lat, lng],
+          zoom: 17,
+
+          dragging: false,
+          zoomControl: false,
+          scrollWheelZoom: false,
+          doubleClickZoom: false,
+          boxZoom: false,
+          keyboard: false,
+          tap: true,
+          touchZoom: false,
+        });
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+        }).addTo(map);
+
+        var redPin = L.divIcon({
+          className: "",
+          html: '<div class="pin"></div>',
+          iconSize: [40, 60],
+          iconAnchor: [20, 60],
+        });
+
+        L.marker([lat, lng], { icon: redPin }).addTo(map);
+
+        // 👉 link da barbearia (versão limpa)
+        var url =
+          "https://www.google.com/maps/place/Barbearia+Pallace/@-8.1782181,-34.9197326,187m/data=!3m2!1e3!4b1!4m6!3m5!1s0x7aae12378acb9b9:0x96174aaae908c72d!8m2!3d-8.1782181!4d-34.9190889!16s%2Fg%2F11q35y6d52?entry=ttu";
+
+        // botão overlay
+        document
+          .getElementById("btnMaps")
+          .addEventListener("click", function () {
+            window.open(url, "_blank");
+          });
+      });
+    </script>
+
     <script src="script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script

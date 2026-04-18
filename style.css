@@ -40,11 +40,12 @@
     font-family: "Montserrat", sans-serif;
 
     display: block;
-    padding: 0.7em 0.5em;
+    padding: 0.7em 0.3em;
     text-decoration: none;
     transition: .3s;
     border-bottom: 1px #f7f7f7 solid;
-    font-weight: 700;
+    font-weight: 600;
+
     text-transform: uppercase;
     color: white;
 }
@@ -573,7 +574,7 @@ svg {
 
 .membroVi {
     width: 28%;
-    height: 100%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -647,7 +648,7 @@ svg {
 }
 
 .and {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./annd.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1616,7 +1617,7 @@ button {
 
     width: 45%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('and.jpg');
+    background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('annd.jpg');
 
     background-position: center;
     background-size: cover;
@@ -2029,6 +2030,7 @@ button {
     .equipePa {
         height: 110vh !important;
         max-height: 900000px;
+        
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -2156,7 +2158,7 @@ button {
 
         width: 45%;
         height: 50%;
-        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('and.jpg');
+        background: linear-gradient(90deg, rgba(0, 71, 95, 0), rgba(0, 71, 95, 0)), url('annd.jpg');
 
         background-position: center;
         background-size: cover;
@@ -2596,7 +2598,7 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./vit.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 90%) !important; 
+            calc(100% - 50%) calc(100% - 90%) !important; 
 
 
         background-size: 150%;
@@ -2624,10 +2626,10 @@ button {
     }
 
     .and {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./and.jpg');
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./annd.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 80%) !important;
+            calc(100% - 50%) calc(100% - 80%) !important;
 
 
         background-size: 150%;
@@ -2637,7 +2639,7 @@ button {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(6, 187, 247, 0)), url('./dem.jpg');
         background-repeat: no-repeat;
         background-position:
-            calc(100% - 80%) calc(100% - 90%) !important;
+            calc(100% - 54%) calc(100% - 90%) !important;
 
 
         background-size: 100%;
@@ -3105,11 +3107,11 @@ carousel {
 
 .abae {
     background-color: white !important;
-    height: 250vh !important;
+    height: auto !important;
 }
 
 .contaba {
-    width: 85%;
+    /* width: 85%; */
 
 }
 
@@ -3137,7 +3139,8 @@ carousel {
 
 @media (min-width: 700px) {
     .abae {
-        height: 100vh !important;
+        /* height: 100vh !important; */
+        background-color: rgb(218, 165, 32)  !important;
     }
 
     .header .nav {
@@ -3188,4 +3191,115 @@ carousel {
         justify-content: center;
         align-items: center;
     }
+}
+ 
+ /* Container do mapa */
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease;
+  pointer-events: none;
+
+  z-index: 9999; /* 🔥 força ficar por cima de tudo */
+}
+/* Mapa */
+#map {
+  width: 100%;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 12px;
+}
+
+/* aplica o PB corretamente nos tiles */
+.leaflet-tile-pane {
+  filter: grayscale(100%) contrast(1.2);
+}
+
+/* PIN personalizado */
+.pin {
+  width: 40px;
+  height: 40px;
+  background: rgb(6, 188, 247);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  position: relative;
+}
+
+.pin::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: white;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  border-radius: 50%;
+}
+
+/* ========================= */
+/* OVERLAY DO MAPA */
+/* ========================= */
+
+.map-overlay {
+  position: absolute;
+  top: 0px; /* acompanha o margin do mapa */
+  left: 0;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+
+  background: rgba(0, 0, 0, 0); /* transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease;
+  pointer-events: none; /* permite interagir com o mapa */
+}
+
+/* Hover ativa overlay */
+.map-container:hover .map-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: auto;
+}
+
+/* Botão */
+#btnMaps {
+    margin-top: 50px !important;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background: rgb(6, 188, 247);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+max-width: 300px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.3s ease;
+}
+
+
+
+/* Aparece com animação */
+.map-container:hover #btnMaps {
+  opacity: 1;
+  transform: scale(1);
 }
