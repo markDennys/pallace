@@ -2315,3 +2315,301 @@ button {
     margin-top: 15px;
     font-size: 14px;
 }
+
+
+.svc-app,
+.svc-app * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+ 
+.svc-app svg {
+  position: static; /* desfaz qualquer "svg { position:absolute }" global */
+}
+ 
+.svc-app {
+  width: 100%;
+  background: rgb(218, 165, 32);
+  padding: 64px 24px;
+  scroll-margin-top: 90px;
+}
+ 
+.svc-app__inner {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+ 
+.svc-app__text {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+ 
+.svc-app__tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: rgb(6, 188, 247);
+  border-radius: 30px;
+}
+ 
+.svc-app__title {
+  margin: 16px 0 0;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+}
+ 
+.svc-app__title span {
+  padding: 0 8px;
+  font-size: inherit;
+  color: #000;
+  background: rgb(6, 188, 247);
+}
+ 
+.svc-app__lead {
+  margin: 16px 0 0;
+  max-width: 460px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #000;
+}
+ 
+.svc-app__list {
+  list-style: none;
+  width: 100%;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+}
+ 
+.svc-app__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+ 
+.svc-app__ic {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(6, 188, 247);
+  border-radius: 50%;
+}
+ 
+.svc-app__list strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+ 
+.svc-app__list small {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #2b2000;
+}
+ 
+.svc-app__label {
+  margin: 32px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+}
+ 
+.svc-app__stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+}
+ 
+.svc-app__badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border: 1px solid #555;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.svc-app__badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+ 
+.svc-app__badge small {
+  display: block;
+  font-size: 9px;
+  line-height: 1;
+}
+ 
+.svc-app__badge strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+ 
+.svc-app__web {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+ 
+.svc-app__web:hover u {
+  color: #fff;
+}
+ 
+.svc-app__help {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+ 
+.svc-app__help-ic {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(218, 165, 32);
+  background: #000;
+  border-radius: 50%;
+}
+ 
+/* ----- lado direito: círculo dourado + celular ----- */
+.svc-app__visual {
+  position: relative;
+  width: 38%;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.svc-app__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 340px;
+  background: rgb(6, 188, 247);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.svc-app__phone {
+  position: relative;
+  width: 235px;
+  height: auto;
+  transform: rotate(7deg);
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.4));
+}
+ 
+/* ----- só a loja do aparelho ----- */
+.svc-app[data-device="ios"] .svc-app__badge--android,
+.svc-app[data-device="android"] .svc-app__badge--ios {
+  display: none;
+}
+ 
+/* ===== MOBILE ===== */
+@media (max-width: 800px) {
+  .svc-app {
+    padding: 40px 22px 32px;
+  }
+ 
+  .svc-app__inner {
+    flex-direction: column;
+    gap: 28px;
+  }
+ 
+  .svc-app__text,
+  .svc-app__visual {
+    width: 100%;
+  }
+ 
+  .svc-app__title {
+    font-size: 32px;
+  }
+ 
+  .svc-app__lead {
+    font-size: 15px;
+  }
+ 
+  .svc-app__list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+ 
+  .svc-app__label {
+    margin-top: 26px;
+  }
+ 
+  .svc-app__stores {
+    width: 100%;
+  }
+ 
+  .svc-app__badge {
+    flex: 1 1 150px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+ 
+  .svc-app__badge strong {
+    font-size: 16px;
+  }
+ 
+  .svc-app__visual {
+    min-height: 360px;
+  }
+ 
+  .svc-app__circle {
+    width: 280px;
+    height: 280px;
+  }
+ 
+  .svc-app__phone {
+    width: 190px;
+  }
+}

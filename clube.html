@@ -401,6 +401,86 @@
     <button class="zpazap" onclick="call()">
       <img src="zap.png" class="zz" alt="" />
     </button>
+
+    <!-- ===== ASSINAR PELO APP (página do Clube) =====
+     Cole este bloco no clube.html, logo ANTES de <script src="script.js"></script>.
+     Não precisa mexer nos botões "Assinar" que já existem nos 3 cards. -->
+
+<!-- janela com as duas lojas (só aparece no computador) -->
+<div class="store-pick" id="storePick" role="dialog" aria-modal="true" aria-labelledby="storePickTitle">
+  <div class="store-pick__box">
+    <button class="store-pick__close" id="storePickClose" aria-label="Fechar">&times;</button>
+
+    <span class="store-pick__tag">Clube Pallace</span>
+    <h2 class="store-pick__title" id="storePickTitle">Assine pelo nosso app</h2>
+    <p class="store-pick__plan" id="storePickPlan"></p>
+    <p class="store-pick__text">
+      A assinatura é feita direto no aplicativo. Baixe na loja do seu celular:
+    </p>
+
+    <div class="store-pick__stores">
+      <a class="store-pick__badge" href="https://play.google.com/store/apps/details?id=pallacebarbearia.bestbarbers.app" target="_blank" rel="noopener">
+        <svg width="28" height="30" viewBox="0 0 24 26"><path fill="#00d4ff" d="M1 1l12 12L1 25z"/><path fill="#00f076" d="M1 1l16 9-4 3z"/><path fill="#ff3a44" d="M1 25l16-9-4-3z"/><path fill="#ffd500" d="M17 10l5 3-5 3-4-3z"/></svg>
+        <span><small>DISPONÍVEL NO</small><strong>Google Play</strong></span>
+      </a>
+      <a class="store-pick__badge" href="https://apps.apple.com/br/app/pallace-barbearia/id6810630471" target="_blank" rel="noopener">
+        <svg width="26" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.7c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9s-1.9-.9-3.1-.8c-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.5.8 1.2 1.7 2.4 3 2.4 1.2 0 1.7-.8 3.100-.8s1.9.8 3.1.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700-.1 0-2.500-1-2.500-3.900zM14.100 5.600c.7-.8 1.100-1.900 1-3-1 0-2.100.7-2.800 1.500-.6.700-1.200 1.800-1 2.900 1.100.1 2.100-.6 2.800-1.400z"/></svg>
+        <span><small>Disponível na</small><strong>App Store</strong></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var PLAY = "https://play.google.com/store/apps/details?id=pallacebarbearia.bestbarbers.app";
+    var APPLE = "https://apps.apple.com/br/app/pallace-barbearia/id6810630471";
+
+    // Detecta o aparelho: "ios", "android" ou "desktop"
+    var ua = navigator.userAgent || "";
+    var device = "desktop";
+    if (/iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) device = "ios";
+    else if (/Android/i.test(ua)) device = "android";
+
+    var buttons = document.querySelectorAll(".assinar-btn");
+    var pick = document.getElementById("storePick");
+    var pickClose = document.getElementById("storePickClose");
+    var pickPlan = document.getElementById("storePickPlan");
+
+    function openPick(planName) {
+      pickPlan.textContent = planName || "";
+      pick.classList.add("open");
+    }
+    function closePick() {
+      pick.classList.remove("open");
+    }
+
+    buttons.forEach(function (btn) {
+      // celular: o botão já vai direto para a loja certa
+      if (device === "ios") btn.href = APPLE;
+      else if (device === "android") btn.href = PLAY;
+
+      // computador: abre a janela com as duas lojas
+      if (device === "desktop") {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          var card = btn.closest(".card");
+          var name = card && card.querySelector(".cl");
+          openPick(name ? name.textContent.trim() : "");
+        });
+      }
+    });
+
+    pickClose.addEventListener("click", closePick);
+    pick.addEventListener("click", function (e) {
+      if (e.target === pick) closePick();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closePick();
+    });
+  })();
+</script>
+
     <script src="script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script

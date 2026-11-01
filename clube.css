@@ -2142,3 +2142,170 @@ margin-bottom: 10px;
 }
 
  
+
+
+/* ===== ASSINAR PELO APP (página do Clube) =====
+   Cole no final do clube.css */
+
+.store-pick,
+.store-pick * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.store-pick svg {
+  position: static; /* desfaz qualquer "svg { position:absolute }" global */
+}
+
+.store-pick {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.store-pick.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.store-pick__box {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  padding: 36px 32px 32px;
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  transform: translateY(16px) scale(0.97);
+  transition: transform 0.25s ease;
+}
+
+.store-pick.open .store-pick__box {
+  transform: translateY(0) scale(1);
+}
+
+.store-pick__close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 32px;
+  line-height: 1;
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.store-pick__close:hover {
+  color: #02a1ee;
+}
+
+.store-pick__tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: rgb(218, 165, 32);
+  border-radius: 30px;
+}
+
+.store-pick__title {
+  margin: 16px 0 0;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.store-pick__plan {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #02a1ee;
+  text-align: center;
+}
+
+.store-pick__plan:empty {
+  display: none;
+}
+
+.store-pick__text {
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+}
+
+.store-pick__stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.store-pick__badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border: 1px solid #555;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-pick__badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.store-pick__badge small {
+  display: block;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.store-pick__badge strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .store-pick__box {
+    padding: 32px 20px 24px;
+  }
+
+  .store-pick__title {
+    font-size: 22px;
+  }
+
+  .store-pick__badge {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}

@@ -6,7 +6,9 @@
     font-family: Montserrat;
 
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .none {
     display: none;
 }
@@ -486,7 +488,7 @@ svg {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: url(celm.png);
+    background: url(celm2.png);
     background-size: cover;
     background-position: center;
 }
@@ -3301,4 +3303,680 @@ max-width: 300px;
 .map-container:hover #btnMaps {
   opacity: 1;
   transform: scale(1);
+}
+/* ===== MODAL APP PALLACE ===== */
+
+/* o style.css tem "svg { position:absolute }" global; isso desfaz dentro do modal */
+.app-modal svg {
+  position: static;
+}
+
+/* evita estouro de largura (padding somando na largura) */
+.app-modal,
+.app-modal *,
+.app-modal *::before,
+.app-modal *::after {
+  box-sizing: border-box;
+}
+
+.app-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647; /* acima do header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.app-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-modal__box {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s ease;
+}
+
+.app-modal.open .app-modal__box {
+  transform: translateY(0) scale(1);
+}
+
+.app-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 34px;
+  line-height: 1;
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.app-modal__close:hover {
+  color: #02a1ee;
+}
+
+.app-modal__body {
+  position: relative;
+  display: flex;
+  min-height: 540px;
+}
+
+.app-modal__content {
+  position: relative;
+  z-index: 2;
+  width: 55%;
+  padding: 24px 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-modal__logo {
+  width: 160px;
+  /* transforma a logo branca em azul */
+  filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(2400%) hue-rotate(176deg) brightness(97%);
+}
+
+.app-modal__tag-wrap {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.app-modal .app-modal__spark {
+  position: absolute;
+  left: 100%;
+  top: -22px;
+  width: 56px;
+  height: 56px;
+  margin-left: 10px;
+}
+
+.app-modal__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #02a1ee;
+  border-radius: 30px;
+}
+
+.app-modal__title {
+  margin-top: 18px;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #111;
+  text-align: left;
+}
+
+.app-modal__title span {
+  color: #02a1ee;
+  font-size: inherit;
+}
+
+.app-modal__text {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+  max-width: 330px;
+}
+
+.app-modal__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  margin-top: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background: #02a1ee;
+  border-radius: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-modal__download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(2, 161, 238, 0.45);
+}
+
+.app-modal__stores {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.store-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 0 14px;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border: 1px solid #555;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.store-badge:hover {
+  transform: scale(1.04);
+}
+
+.store-badge small {
+  display: block;
+  font-size: 8px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.store-badge strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+/* ----- lado direito: blob + celular (desktop) ----- */
+.app-modal__visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  z-index: 1;
+}
+
+.app-modal .app-modal__blob {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  width: 100%;
+  height: 460px;
+}
+
+.app-modal__phone {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 215px;
+  height: auto;
+  transform: translateX(-50%) rotate(7deg);
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.35));
+}
+
+.app-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+}
+
+.app-modal__footer-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  background: #02a1ee;
+  border-radius: 50%;
+}
+
+/* ===== Selos conforme o aparelho ===== */
+.app-modal[data-device="ios"] .store-badge--android,
+.app-modal[data-device="android"] .store-badge--ios {
+  display: none;
+}
+
+/* no computador mostra os dois selos e esconde o botão genérico */
+.app-modal[data-device="desktop"] .app-modal__download {
+  display: none;
+}
+
+.app-modal[data-device="desktop"] .app-modal__stores {
+  margin-top: 28px;
+}
+
+/* ===== MOBILE =====
+   Grade de 2 colunas: textos à esquerda, celular à direita.
+   Botão e selos ocupam a largura toda embaixo. Nada fica sobreposto. */
+@media (max-width: 700px) {
+  .app-modal {
+    padding: 12px;
+  }
+
+  .app-modal__box {
+    max-width: 420px;
+    max-height: 96vh;
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+
+  .app-modal__close {
+    top: 10px;
+    right: 12px;
+    font-size: 30px;
+  }
+
+  .app-modal__body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 40%;
+    column-gap: 6px;
+    align-items: start;
+    min-height: 0;
+    padding: 22px 20px 18px;
+  }
+
+  /* os filhos viram itens diretos da grade */
+  .app-modal__content {
+    display: contents;
+  }
+
+  .app-modal__logo {
+    grid-column: 1;
+    width: 120px;
+  }
+
+  .app-modal__tag-wrap {
+    grid-column: 1;
+    justify-self: start;
+    margin-top: 14px;
+  }
+
+  .app-modal__tag {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .app-modal .app-modal__spark {
+    top: -16px;
+    width: 38px;
+    height: 38px;
+    margin-left: 6px;
+  }
+
+  .app-modal__title {
+    grid-column: 1;
+    margin-top: 12px;
+    font-size: 22px;
+  }
+
+  .app-modal__text {
+    grid-column: 1;
+    max-width: none;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .app-modal__visual {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    height: 100%;
+    min-height: 260px;
+    margin-right: -20px; /* encosta o azul na borda do modal */
+  }
+
+  .app-modal .app-modal__blob {
+    top: 28px;
+    height: calc(100% - 20px);
+  }
+
+  .app-modal__phone {
+    top: 50%;
+    left: 46%;
+    width: 112px;
+    transform: translate(-50%, -50%) rotate(7deg);
+  }
+
+  .app-modal__download {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    height: 52px;
+    margin-top: 18px;
+    font-size: 16px;
+  }
+
+  .app-modal__stores {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .store-badge {
+    flex: 1;
+    justify-content: center;
+    padding: 0 6px;
+  }
+
+  .store-badge strong {
+    font-size: 14px;
+  }
+
+  .app-modal[data-device="ios"] .store-badge,
+  .app-modal[data-device="android"] .store-badge {
+    flex: 0 1 240px;
+  }
+
+  .app-modal[data-device="desktop"] .app-modal__stores {
+    margin-top: 14px;
+  }
+
+  .app-modal__footer {
+    padding: 14px 18px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-modal__title { font-size: 20px; }
+  .app-modal__text { font-size: 12px; }
+  .app-modal__phone { width: 100px; }
+}
+
+
+/* ===== SEÇÃO "AGENDE JÁ SEU HORÁRIO" =====
+   Cole no final do style.css */
+
+.app-sec svg {
+  position: static; /* desfaz o "svg { position:absolute }" global do style.css */
+}
+
+.app-sec,
+.app-sec * {
+  box-sizing: border-box;
+}
+
+/* a seção deixa de ter altura fixa */
+.phoneC.app-sec {
+  height: auto;
+  max-height: none;
+  align-items: stretch;
+}
+
+.phoneC.app-sec .phone-container {
+  height: auto;
+  min-height: 560px;
+  align-items: stretch;
+}
+
+.phoneC.app-sec .phonetexts {
+  width: 55%;
+  height: auto;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.phoneC.app-sec .phoneimg {
+  height: auto;
+  min-height: 560px;
+}
+
+.app-sec__inner {
+  width: 100%;
+  max-width: 560px;
+  padding: 48px 56px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-sec__tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: rgb(218, 165, 32);
+  border-radius: 30px;
+}
+
+.app-sec__title {
+  margin-top: 16px;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+.app-sec__title span {
+  font-size: inherit;
+  padding: 0 8px;
+  color: #000;
+  background: rgb(218, 165, 32);
+}
+
+.app-sec__lead {
+  margin-top: 16px;
+  max-width: 440px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #fff;
+}
+
+.app-sec__list {
+  list-style: none;
+  width: 100%;
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+}
+
+.app-sec__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.app-sec__ic {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+}
+
+.app-sec__list strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.app-sec__list small {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #04364d;
+}
+
+.app-sec__label {
+  margin-top: 32px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.app-sec__stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.app-sec__badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border: 1px solid #555;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-sec__badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.app-sec__badge small {
+  display: block;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.app-sec__badge strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.app-sec__web {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-sec__web:hover u {
+  color: #04364d;
+}
+
+/* ----- só a loja do aparelho ----- */
+.app-sec[data-device="ios"] .app-sec__badge--android,
+.app-sec[data-device="android"] .app-sec__badge--ios {
+  display: none;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
+  .phoneC.app-sec {
+    height: auto;
+    max-height: none;
+    background-color: #06bcf7;
+  }
+
+  .phoneC.app-sec .phone-container {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .phoneC.app-sec .phonetexts {
+    width: 100%;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .app-sec__inner {
+    max-width: none;
+    padding: 36px 22px 28px;
+  }
+
+  .app-sec__title {
+    font-size: 32px;
+  }
+
+  .app-sec__lead {
+    font-size: 15px;
+  }
+
+  .app-sec__list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .app-sec__label {
+    margin-top: 26px;
+  }
+
+  .app-sec__stores {
+    width: 100%;
+  }
+
+  .app-sec__badge {
+    flex: 1 1 150px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .app-sec__badge strong {
+    font-size: 16px;
+  }
+
+  .phoneC.app-sec .phoneimg {
+    width: 100%;
+    height: 380px;
+    min-height: 0;
+  }
 }
